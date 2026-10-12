@@ -100,6 +100,21 @@ Na een reboot staat turbo weer aan: `sudo ./scripts/precheck.sh --fix` eerst.
 
 **Tijdens een run** niets zwaars op de server doen, ook niet `htop` laten openstaan. `status.sh` en `tail` zijn prima.
 
+## 3b. Alles onbeheerd (pilots + hoofdexperiment)
+
+```bash
+sudo ./scripts/all.sh install          # opties: --until p5 (stop vóór het hoofdexperiment), --at "2026-10-14 21:00 CEST"
+exit                                   # uitloggen en VS Code sluiten
+./scripts/all.sh status                # later: voortgang
+```
+
+Draait als systemd-service (`energy-bench`): geen SSH nodig, en na een reboot gaat hij verder (turbo weer uit,
+afgeronde stappen worden overgeslagen). Wacht eerst tot niemand is ingelogd en de VS Code-server weg is.
+Na p2 zet hij `ITERS_A`/`ITERS_B` zelf in `config.env` (stopt bij FAIL); na p3 stopt hij bij mislukte launches;
+na p4 wordt níét automatisch beslist: het hoofdexperiment gebruikt `LAUNCHES`/`REPS`/`WARMUP` uit `config.env`.
+Aan het eind (of bij een fout) draait `restore.sh` en schakelt de service zichzelf uit.
+Uitkomst in `results/all/FINISHED` of `results/all/FAILED`, log in `results/all/all.log`.
+
 ## 4. Output
 
 Per run-map (`results/...`):
