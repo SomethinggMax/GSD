@@ -1,0 +1,7 @@
+package domain : intel-rapl:0  max_energy_range_uj = 262143328850
+dram domain    : intel-rapl:0:2  max_energy_range_uj = 262143328850
+reads in 2 s   : 175329 (11.4 us per read)
+counter updates: 1999, interval median 1000 us, p5 953 us, p95 1044 us
+package power while polling (1 busy core): 8.81 W
+wrap-around after: 4033 s at 65 W (TDP i7-9700), 29763 s at the power above
+dram energy while pre-touching a 2 GB heap: 476 mJ

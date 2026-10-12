@@ -1,0 +1,73 @@
+Collected: 2026-10-02T11:10:26+00:00 on rapl-server-joost
+
+== CPU
+CPU(s):                                  8
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
+Thread(s) per core:                      1
+Core(s) per socket:                      8
+Socket(s):                               1
+CPU(s) scaling MHz:                      94%
+CPU max MHz:                             4700.0000
+CPU min MHz:                             800.0000
+NUMA node(s):                            1
+
+== Virtualisation (none = bare metal)
+none
+
+== Memory
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi       1.5Gi        11Gi       1.8Mi       2.8Gi        13Gi
+
+== OS and kernel
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+7.0.0-34-generic
+
+== Java
+openjdk version "25.0.4.1" 2026-08-18
+OpenJDK Runtime Environment (build 25.0.4.1+1-1-26.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 25.0.4.1+1-1-26.04.4-Ubuntu, mixed mode, sharing)
+   size_t InitialHeapSize                          = 251658240                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 4022337536                                {product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseParallelGC                            = false                                     {product} {default}
+     bool UseSerialGC                              = false                                     {product} {default}
+     bool UseShenandoahGC                          = false                                     {product} {default}
+     bool UseZGC                                   = false                                     {product} {default}
+/usr/lib/jvm/default-java
+/usr/lib/jvm/java-1.25.0-openjdk-amd64
+/usr/lib/jvm/java-25-openjdk-amd64
+/usr/lib/jvm/openjdk-25
+
+== Frequency governor and driver
+powersave
+intel_pstate
+
+== Turbo boost
+intel_pstate no_turbo = 0  (1 = turbo off)
+
+== SMT / hyper-threading
+notsupported
+
+== RAPL domains (powercap)
+/sys/class/powercap/intel-rapl:0  name=package-0  max_energy_range_uj=262143328850
+/sys/class/powercap/intel-rapl:0:0  name=core  max_energy_range_uj=262143328850
+/sys/class/powercap/intel-rapl:0:1  name=uncore  max_energy_range_uj=262143328850
+/sys/class/powercap/intel-rapl:0:2  name=dram  max_energy_range_uj=262143328850
+
+== RAPL counter permissions
+-r--r----- 1 root rapl 4096 Sep 29 20:03 /sys/class/powercap/intel-rapl:0/energy_uj
+readable as max: yes
+sudo without password: no (may still work with a password)
+
+== Thread and process limits
+ulimit -u (max user processes) = 61093
+kernel.threads-max = 122186
+vm.max_map_count   = 1048576
+
+== Tools
+perf: /usr/bin/perf
+taskset: /usr/bin/taskset
+
+== Other users and load
+ 11:10:26 up 2 days, 15:06,  2 users,  load average: 0.01, 0.05, 0.01
