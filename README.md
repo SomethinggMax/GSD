@@ -1,7 +1,6 @@
 # Energy and Performance of Virtual Threads Compared to Established JVM Concurrency Constructs
 
 Replication package for the paper by Joost Liebeton and Max van Zanten (University of Twente).
-The paper is in [`paper/GSD.pdf`](paper/GSD.pdf).
 
 We compare virtual threads with explicit multithreading, a fixed thread pool and the Fork/Join framework on
 three synthetic server-side benchmarks, varying the blocking ratio b (0–0.95) and the concurrency level C
@@ -11,7 +10,6 @@ turbo boost off; 240 configurations × 10 JVM launches × 10 repetitions (7 warm
 ## Repository layout
 
 ```
-paper/GSD.pdf                   the final paper
 energy-bench/                   measurement harness (Java + bash), see energy-bench/README.md
   src/bench/                    benchmarks, the four constructs, RAPL reader, echo server, calibration
   scripts/                      pilot, main experiment, unattended runner, profiling, machine checks
