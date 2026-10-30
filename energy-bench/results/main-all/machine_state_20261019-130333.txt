@@ -1,0 +1,122 @@
+
+===== time =====
+2026-10-19T13:03:34+00:00
+ 13:03:34 up 19 days, 16:59,  1 user,  load average: 0.00, 0.01, 0.00
+
+===== host =====
+rapl-server-joost
+Linux rapl-server-joost 7.0.0-34-generic #34-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:29:37 UTC 2026 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+
+===== kernel cmdline =====
+BOOT_IMAGE=/vmlinuz-7.0.0-34-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M
+
+===== cpu =====
+CPU(s):                                  8
+Model name:                              Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
+Thread(s) per core:                      1
+Core(s) per socket:                      8
+Socket(s):                               1
+CPU(s) scaling MHz:                      100%
+CPU max MHz:                             3000.0000
+CPU min MHz:                             800.0000
+NUMA node(s):                            1
+
+===== cpufreq =====
+driver:    intel_pstate
+governors:  8 powersave
+no_turbo:  1
+min/max:   800000 / 3000000 kHz
+EPP:       balance_performance
+
+===== rapl =====
+intel-rapl:0: package-0  max_energy_range_uj=262143328850
+intel-rapl:0:0: core  max_energy_range_uj=262143328850
+intel-rapl:0:1: uncore  max_energy_range_uj=262143328850
+intel-rapl:0:2: dram  max_energy_range_uj=262143328850
+
+===== temperature =====
+Package id 0: 29 C
+Core 0: 26 C
+Core 1: 27 C
+Core 2: 25 C
+Core 3: 27 C
+Core 4: 29 C
+Core 5: 25 C
+Core 6: 27 C
+Core 7: 25 C
+
+===== memory =====
+               total        used        free      shared  buff/cache   available
+Mem:           15341         798        7552           1        7332       14543
+Swap:           4095           0        4095
+
+===== java =====
+openjdk version "25.0.4.1" 2026-08-18
+OpenJDK Runtime Environment (build 25.0.4.1+1-1-26.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 25.0.4.1+1-1-26.04.4-Ubuntu, mixed mode, sharing)
+
+===== jdk packages =====
+hi openjdk-25-jdk:amd64 25.0.4.1+1-1~26.04.4
+hi openjdk-25-jdk-headless:amd64 25.0.4.1+1-1~26.04.4
+hi openjdk-25-jre:amd64 25.0.4.1+1-1~26.04.4
+hi openjdk-25-jre-headless:amd64 25.0.4.1+1-1~26.04.4
+
+===== held packages =====
+openjdk-25-jdk
+openjdk-25-jdk-headless
+openjdk-25-jre
+openjdk-25-jre-headless
+
+===== sysctl =====
+net.core.somaxconn = 16384
+net.ipv4.tcp_max_syn_backlog = 16384
+kernel.perf_event_paranoid = 0
+
+===== timers =====
+NEXT                          LEFT LAST                              PASSED UNIT                           ACTIVATES
+Mon 2026-10-19 13:10:00 UTC   6min Mon 2026-10-19 13:00:00 UTC 3min 34s ago sysstat-collect.timer          sysstat-collect.service
+Mon 2026-10-19 20:13:16 UTC     7h Sun 2026-10-18 20:13:16 UTC      16h ago update-notifier-download.timer update-notifier-download.service
+Mon 2026-10-19 20:25:28 UTC     7h Sun 2026-10-18 20:25:28 UTC      16h ago systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+Tue 2026-10-20 00:00:00 UTC    10h Mon 2026-10-19 00:00:45 UTC      13h ago dpkg-db-backup.timer           dpkg-db-backup.service
+Tue 2026-10-20 00:00:00 UTC    10h Mon 2026-10-19 00:00:45 UTC      13h ago sysstat-rotate.timer           sysstat-rotate.service
+Tue 2026-10-20 00:07:00 UTC    11h Mon 2026-10-19 00:07:03 UTC      12h ago sysstat-summary.timer          sysstat-summary.service
+Tue 2026-10-20 00:30:05 UTC    11h Mon 2026-10-19 00:45:20 UTC      12h ago logrotate.timer                logrotate.service
+Sun 2026-10-25 03:10:31 UTC 5 days Sun 2026-10-18 03:10:37 UTC 1 day 9h ago e2scrub_all.timer              e2scrub_all.service
+Sun 2026-10-25 03:10:55 UTC 5 days Sun 2026-10-18 03:11:28 UTC 1 day 9h ago xfs_scrub_all.timer            xfs_scrub_all.service
+Sun 2026-10-25 21:53:07 UTC 6 days Sun 2026-10-18 23:42:10 UTC      13h ago update-notifier-motd.timer     update-notifier-motd.service
+Mon 2026-10-26 00:28:58 UTC 6 days Mon 2026-10-19 00:15:33 UTC      12h ago fstrim.timer                   fstrim.service
+-                                - -                                      - apport-autoreport.timer        apport-autoreport.service
+-                                - Mon 2026-10-19 06:14:36 UTC       6h ago apt-daily-upgrade.timer        apt-daily-upgrade.service
+-                                - Mon 2026-10-19 01:52:50 UTC      11h ago apt-daily.timer                apt-daily.service
+-                                - Mon 2026-10-19 12:58:32 UTC     5min ago fwupd-refresh.timer            fwupd-refresh.service
+-                                - Mon 2026-10-19 07:09:28 UTC 5h 54min ago man-db.timer                   man-db.service
+-                                - Mon 2026-10-19 12:58:32 UTC     5min ago motd-news.timer                motd-news.service
+-                                - -                                      - snapd.snap-repair.timer        snapd.snap-repair.service
+-                                - -                                      - ua-timer.timer                 ua-timer.service
+
+19 timers listed.
+
+===== logged in =====
+
+===== top processes by cpu =====
+    PID USER     %CPU %MEM COMMAND
+3545728 root      5.8  0.0 bash
+3544193 root      0.1  0.0 kworker/4:0-events
+3545198 root      0.1  0.0 kworker/7:1-events
+3541582 root      0.0  0.0 kworker/4:1-events
+   1349 root      0.0  0.3 tailscaled
+3543810 root      0.0  0.0 kworker/1:0-events
+3543611 root      0.0  0.0 kworker/1:2-events
+3544665 root      0.0  0.0 kworker/3:1-events
+3544110 root      0.0  0.0 kworker/2:0-events
+3543953 root      0.0  0.0 kworker/2:2-cgroup_free
+3544269 root      0.0  0.0 kworker/3:2-events
+3544649 root      0.0  0.0 kworker/5:2-cgroup_free
+3542354 root      0.0  0.0 kworker/6:2-events
+    862 root      0.0  0.0 irq/136-iwlwifi
+
+===== network =====
+(interface addresses removed for publication)
+===== harness =====
+not a git checkout

@@ -1,0 +1,22 @@
+A-vt-nojfr rep  0 (warm-up)  time   10.713 s  pkg    40.657 J  dram    6.235 J  checksum ok
+A-vt-nojfr rep  1 (warm-up)  time   11.460 s  pkg    36.374 J  dram    6.634 J  checksum ok
+A-vt-nojfr rep  2            time   12.226 s  pkg    36.135 J  dram    7.031 J  checksum ok
+A-vt-nojfr rep  3            time   13.006 s  pkg    33.237 J  dram    7.466 J  checksum ok
+[0.476s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0.476s][info][jfr,startup] 
+[0.476s][info][jfr,startup] Use jcmd 3517381 JFR.dump name=1 to copy recording data to file.
+A-vt-jfr rep  0 (warm-up)  time   11.815 s  pkg    39.379 J  dram    6.748 J  checksum ok
+A-vt-jfr rep  1 (warm-up)  time   12.250 s  pkg    41.200 J  dram    6.995 J  checksum ok
+A-vt-jfr rep  2            time   13.305 s  pkg    33.557 J  dram    7.580 J  checksum ok
+A-vt-jfr rep  3            time   13.028 s  pkg    35.920 J  dram    7.420 J  checksum ok
+A-fj-nojfr rep  0 (warm-up)  time   59.170 s  pkg    39.491 J  dram   33.307 J  checksum ok
+A-fj-nojfr rep  1 (warm-up)  time   59.338 s  pkg    39.531 J  dram   33.357 J  checksum ok
+A-fj-nojfr rep  2            time   59.332 s  pkg    38.950 J  dram   33.332 J  checksum ok
+A-fj-nojfr rep  3            time   59.360 s  pkg    39.363 J  dram   33.345 J  checksum ok
+[0.472s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0.472s][info][jfr,startup] 
+[0.472s][info][jfr,startup] Use jcmd 3517607 JFR.dump name=1 to copy recording data to file.
+A-fj-jfr rep  0 (warm-up)  time   59.255 s  pkg    50.935 J  dram   34.042 J  checksum ok
+A-fj-jfr rep  1 (warm-up)  time   59.370 s  pkg    50.731 J  dram   34.020 J  checksum ok
+A-fj-jfr rep  2            time   59.373 s  pkg    50.116 J  dram   34.013 J  checksum ok
+A-fj-jfr rep  3            time   59.396 s  pkg    49.476 J  dram   34.032 J  checksum ok

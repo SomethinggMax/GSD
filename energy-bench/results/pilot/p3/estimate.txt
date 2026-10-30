@@ -1,0 +1,30 @@
+configurations measured: 240
+
+launches  reps      all benchmarks, full grid  A full, B and C on the axes
+10        10        81.5 h                     40.7 h                    
+10        8         66.6 h                     33.4 h                    
+10        6         51.7 h                     26.1 h                    
+7         10        57.0 h                     28.5 h                    
+7         8         46.6 h                     23.4 h                    
+7         6         36.2 h                     18.3 h                    
+5         10        40.7 h                     20.4 h                    
+5         8         33.3 h                     16.7 h                    
+5         6         25.8 h                     13.1 h                    
+
+slowest configurations (mean seconds per repetition):
+  C-fj-b0.95-C10             94.59 s/rep  overhead   0.6 s/launch
+  B-fj-b0.95-C10             90.45 s/rep  overhead   0.7 s/launch
+  A-fj-b0.95-C10             90.00 s/rep  overhead   0.5 s/launch
+  C-fj-b0.95-C100            61.27 s/rep  overhead   0.6 s/launch
+  A-fj-b0.95-C100            59.24 s/rep  overhead   0.6 s/launch
+  C-fj-b0.95-C1000           58.96 s/rep  overhead   0.5 s/launch
+  C-fj-b0.95-C10000          58.79 s/rep  overhead   0.6 s/launch
+  B-fj-b0.95-C100            58.76 s/rep  overhead   0.7 s/launch
+  C-explicit-b0.95-C10       58.62 s/rep  overhead   0.6 s/launch
+  A-fj-b0.95-C10000          56.93 s/rep  overhead   0.6 s/launch
+
+runs shorter than 2 s:
+  none
+
+checksum failures:
+  none

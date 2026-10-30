@@ -1,4 +1,4 @@
-precheck 2026-10-12T22:10:20+00:00 on rapl-server-joost  (fix=0)
+precheck 2026-10-12T22:39:43+00:00 on rapl-server-joost  (fix=0)
   OK    RAPL package domain /sys/class/powercap/intel-rapl:0 readable
   OK    RAPL dram domain: /sys/class/powercap/intel-rapl:0/intel-rapl:0:2
   OK    scaling driver intel_pstate

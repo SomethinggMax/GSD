@@ -1,0 +1,8 @@
+round  1  iters   600000  median   1589.8 us
+round  2  iters   377410  median    999.7 us
+
+single thread  iters 377410  median 999.8 us  p10 999.7 us  p90 999.9 us
+8 threads      iters 377410  median 999.7 us  p10 999.6 us  p90 1000.0 us
+OK    8 threads vs 1 thread: -0.0% (limit +10%)
+
+-> put this in config.env:  ITERS_A=377410

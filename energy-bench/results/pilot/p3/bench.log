@@ -1,0 +1,480 @@
+B-pool-b0.75-C1000-L01 rep  0 (warm-up)  time    2.911 s  pkg    78.093 J  dram    4.637 J  checksum ok
+B-pool-b0.75-C1000-L01 rep  1            time    2.877 s  pkg    77.489 J  dram    4.598 J  checksum ok
+B-vt-b0.75-C1000-L01 rep  0 (warm-up)  time    2.652 s  pkg    78.669 J  dram    4.443 J  checksum ok
+B-vt-b0.75-C1000-L01 rep  1            time    2.631 s  pkg    77.473 J  dram    4.408 J  checksum ok
+C-pool-b0.75-C10000-L01 rep  0 (warm-up)  time    3.863 s  pkg    91.064 J  dram    2.710 J  checksum ok
+C-pool-b0.75-C10000-L01 rep  1            time    3.707 s  pkg    84.920 J  dram    2.500 J  checksum ok
+A-fj-b0.25-C10-L01 rep  0 (warm-up)  time    6.988 s  pkg    64.118 J  dram    3.909 J  checksum ok
+A-fj-b0.25-C10-L01 rep  1            time   11.917 s  pkg    36.969 J  dram    6.645 J  checksum ok
+C-explicit-b0.00-C10000-L01 rep  0 (warm-up)  time    2.520 s  pkg    54.117 J  dram    1.405 J  checksum ok
+C-explicit-b0.00-C10000-L01 rep  1            time    2.661 s  pkg    54.685 J  dram    1.482 J  checksum ok
+B-pool-b0.95-C100-L01 rep  0 (warm-up)  time   12.600 s  pkg    45.199 J  dram   10.993 J  checksum ok
+B-pool-b0.95-C100-L01 rep  1            time   12.667 s  pkg    43.175 J  dram   11.027 J  checksum ok
+A-explicit-b0.95-C10-L01 rep  0 (warm-up)  time   56.449 s  pkg    64.140 J  dram   32.891 J  checksum ok
+A-explicit-b0.95-C10-L01 rep  1            time   56.649 s  pkg    66.658 J  dram   32.941 J  checksum ok
+A-vt-b0.00-C10000-L01 rep  0 (warm-up)  time    2.546 s  pkg    56.296 J  dram    1.434 J  checksum ok
+A-vt-b0.00-C10000-L01 rep  1            time    2.507 s  pkg    54.612 J  dram    1.402 J  checksum ok
+A-explicit-b0.50-C10-L01 rep  0 (warm-up)  time    7.702 s  pkg    94.816 J  dram    4.381 J  checksum ok
+A-explicit-b0.50-C10-L01 rep  1            time    7.710 s  pkg    94.659 J  dram    4.363 J  checksum ok
+C-fj-b0.25-C100-L01 rep  0 (warm-up)  time    4.966 s  pkg   101.606 J  dram    3.029 J  checksum ok
+C-fj-b0.25-C100-L01 rep  1            time    5.433 s  pkg    92.711 J  dram    3.236 J  checksum ok
+B-explicit-b0.25-C1000-L01 rep  0 (warm-up)  time    3.224 s  pkg    79.173 J  dram    4.876 J  checksum ok
+B-explicit-b0.25-C1000-L01 rep  1            time    3.177 s  pkg    79.110 J  dram    4.849 J  checksum ok
+C-fj-b0.95-C10000-L01 rep  0 (warm-up)  time   58.850 s  pkg    68.911 J  dram   35.303 J  checksum ok
+C-fj-b0.95-C10000-L01 rep  1            time   58.734 s  pkg    67.656 J  dram   35.091 J  checksum ok
+A-pool-b0.95-C100-L01 rep  0 (warm-up)  time   12.697 s  pkg    36.526 J  dram    7.326 J  checksum ok
+A-pool-b0.95-C100-L01 rep  1            time   12.951 s  pkg    33.686 J  dram    7.458 J  checksum ok
+C-pool-b0.50-C1000-L01 rep  0 (warm-up)  time    4.151 s  pkg    90.318 J  dram    2.567 J  checksum ok
+C-pool-b0.50-C1000-L01 rep  1            time    4.025 s  pkg    84.206 J  dram    2.432 J  checksum ok
+B-fj-b0.25-C100-L01 rep  0 (warm-up)  time    3.803 s  pkg    80.301 J  dram    5.167 J  checksum ok
+B-fj-b0.25-C100-L01 rep  1            time    3.798 s  pkg    79.719 J  dram    5.147 J  checksum ok
+A-fj-b0.25-C100-L01 rep  0 (warm-up)  time    3.907 s  pkg    62.981 J  dram    2.185 J  checksum ok
+A-fj-b0.25-C100-L01 rep  1            time    3.912 s  pkg    63.375 J  dram    2.187 J  checksum ok
+C-vt-b0.50-C10-L01 rep  0 (warm-up)  time   14.750 s  pkg    69.109 J  dram    8.531 J  checksum ok
+C-vt-b0.50-C10-L01 rep  1            time   12.853 s  pkg    72.087 J  dram    7.411 J  checksum ok
+B-vt-b0.25-C100-L01 rep  0 (warm-up)  time    2.810 s  pkg    80.295 J  dram    4.562 J  checksum ok
+B-vt-b0.25-C100-L01 rep  1            time    2.743 s  pkg    78.593 J  dram    4.486 J  checksum ok
+A-vt-b0.75-C10000-L01 rep  0 (warm-up)  time    2.681 s  pkg    65.954 J  dram    1.528 J  checksum ok
+A-vt-b0.75-C10000-L01 rep  1            time    2.632 s  pkg    64.734 J  dram    1.485 J  checksum ok
+B-fj-b0.50-C10000-L01 rep  0 (warm-up)  time    6.253 s  pkg    65.264 J  dram    6.817 J  checksum ok
+B-fj-b0.50-C10000-L01 rep  1            time   10.729 s  pkg    42.242 J  dram    9.853 J  checksum ok
+C-explicit-b0.00-C1000-L01 rep  0 (warm-up)  time    2.540 s  pkg    54.909 J  dram    1.416 J  checksum ok
+C-explicit-b0.00-C1000-L01 rep  1            time    2.545 s  pkg    54.912 J  dram    1.418 J  checksum ok
+A-vt-b0.50-C10-L01 rep  0 (warm-up)  time   14.513 s  pkg    41.132 J  dram    8.112 J  checksum ok
+A-vt-b0.50-C10-L01 rep  1            time   14.608 s  pkg    39.341 J  dram    8.148 J  checksum ok
+C-pool-b0.50-C100-L01 rep  0 (warm-up)  time    4.314 s  pkg    90.022 J  dram    2.603 J  checksum ok
+C-pool-b0.50-C100-L01 rep  1            time    4.602 s  pkg    82.808 J  dram    2.695 J  checksum ok
+B-vt-b0.75-C100-L01 rep  0 (warm-up)  time    3.404 s  pkg    80.199 J  dram    4.905 J  checksum ok
+B-vt-b0.75-C100-L01 rep  1            time    3.336 s  pkg    78.867 J  dram    4.828 J  checksum ok
+C-vt-b0.25-C10000-L01 rep  0 (warm-up)  time    3.383 s  pkg    91.094 J  dram    2.503 J  checksum ok
+C-vt-b0.25-C10000-L01 rep  1            time    3.081 s  pkg    81.050 J  dram    2.100 J  checksum ok
+B-fj-b0.95-C100-L01 rep  0 (warm-up)  time   58.772 s  pkg    50.306 J  dram   36.276 J  checksum ok
+B-fj-b0.95-C100-L01 rep  1            time   58.743 s  pkg    49.314 J  dram   36.191 J  checksum ok
+C-fj-b0.75-C10000-L01 rep  0 (warm-up)  time   13.903 s  pkg    91.350 J  dram    7.922 J  checksum ok
+C-fj-b0.75-C10000-L01 rep  1            time   15.074 s  pkg    67.553 J  dram    8.494 J  checksum ok
+B-pool-b0.00-C10000-L01 rep  0 (warm-up)  time    2.525 s  pkg    76.344 J  dram    4.328 J  checksum ok
+B-pool-b0.00-C10000-L01 rep  1            time    2.503 s  pkg    75.871 J  dram    4.305 J  checksum ok
+A-pool-b0.95-C10-L01 rep  0 (warm-up)  time   51.900 s  pkg    45.463 J  dram   29.789 J  checksum ok
+A-pool-b0.95-C10-L01 rep  1            time   52.296 s  pkg    45.850 J  dram   29.932 J  checksum ok
+B-explicit-b0.50-C10000-L01 rep  0 (warm-up)  time    2.622 s  pkg    78.285 J  dram    4.399 J  checksum ok
+B-explicit-b0.50-C10000-L01 rep  1            time    2.615 s  pkg    78.380 J  dram    4.391 J  checksum ok
+C-vt-b0.25-C1000-L01 rep  0 (warm-up)  time    3.362 s  pkg    90.045 J  dram    2.417 J  checksum ok
+C-vt-b0.25-C1000-L01 rep  1            time    3.137 s  pkg    82.579 J  dram    2.004 J  checksum ok
+C-fj-b0.75-C1000-L01 rep  0 (warm-up)  time   12.632 s  pkg    94.860 J  dram    7.209 J  checksum ok
+C-fj-b0.75-C1000-L01 rep  1            time   12.119 s  pkg    94.469 J  dram    6.891 J  checksum ok
+B-fj-b0.00-C10000-L01 rep  0 (warm-up)  time    2.515 s  pkg    76.583 J  dram    4.328 J  checksum ok
+B-fj-b0.00-C10000-L01 rep  1            time    2.499 s  pkg    76.166 J  dram    4.310 J  checksum ok
+A-vt-b0.95-C100-L01 rep  0 (warm-up)  time   11.954 s  pkg    38.315 J  dram    6.915 J  checksum ok
+A-vt-b0.95-C100-L01 rep  1            time   11.862 s  pkg    37.077 J  dram    6.842 J  checksum ok
+A-pool-b0.00-C10-L01 rep  0 (warm-up)  time    4.304 s  pkg    62.300 J  dram    2.401 J  checksum ok
+A-pool-b0.00-C10-L01 rep  1            time    4.280 s  pkg    61.767 J  dram    2.384 J  checksum ok
+B-fj-b0.25-C10-L01 rep  0 (warm-up)  time    7.059 s  pkg    77.934 J  dram    7.263 J  checksum ok
+B-fj-b0.25-C10-L01 rep  1            time    7.761 s  pkg    63.875 J  dram    7.762 J  checksum ok
+B-explicit-b0.50-C1000-L01 rep  0 (warm-up)  time    2.699 s  pkg    77.733 J  dram    4.463 J  checksum ok
+B-explicit-b0.50-C1000-L01 rep  1            time    2.696 s  pkg    77.745 J  dram    4.456 J  checksum ok
+C-explicit-b0.50-C1000-L01 rep  0 (warm-up)  time    4.126 s  pkg    88.123 J  dram    2.500 J  checksum ok
+C-explicit-b0.50-C1000-L01 rep  1            time    4.118 s  pkg    82.923 J  dram    2.410 J  checksum ok
+B-fj-b0.50-C100-L01 rep  0 (warm-up)  time    9.588 s  pkg    50.922 J  dram    9.027 J  checksum ok
+B-fj-b0.50-C100-L01 rep  1            time   10.428 s  pkg    45.631 J  dram    9.593 J  checksum ok
+C-vt-b0.00-C10000-L01 rep  0 (warm-up)  time    2.550 s  pkg    56.625 J  dram    1.438 J  checksum ok
+C-vt-b0.00-C10000-L01 rep  1            time    2.508 s  pkg    54.801 J  dram    1.401 J  checksum ok
+C-explicit-b0.50-C100-L01 rep  0 (warm-up)  time    4.634 s  pkg    92.624 J  dram    2.904 J  checksum ok
+C-explicit-b0.50-C100-L01 rep  1            time    4.451 s  pkg    91.029 J  dram    2.731 J  checksum ok
+C-explicit-b0.95-C10000-L01 rep  0 (warm-up)  time    3.465 s  pkg    80.479 J  dram    2.464 J  checksum ok
+C-explicit-b0.95-C10000-L01 rep  1            time    3.605 s  pkg    74.521 J  dram    2.343 J  checksum ok
+B-vt-b0.95-C100-L01 rep  0 (warm-up)  time   11.477 s  pkg    49.073 J  dram   10.135 J  checksum ok
+B-vt-b0.95-C100-L01 rep  1            time   11.928 s  pkg    43.604 J  dram   10.417 J  checksum ok
+A-explicit-b0.25-C10-L01 rep  0 (warm-up)  time   12.605 s  pkg    55.859 J  dram    7.125 J  checksum ok
+A-explicit-b0.25-C10-L01 rep  1            time   16.841 s  pkg    45.649 J  dram    9.472 J  checksum ok
+C-fj-b0.00-C10-L01 rep  0 (warm-up)  time    4.130 s  pkg    62.710 J  dram    2.306 J  checksum ok
+C-fj-b0.00-C10-L01 rep  1            time    4.119 s  pkg    61.051 J  dram    2.294 J  checksum ok
+C-explicit-b0.25-C10-L01 rep  0 (warm-up)  time    6.399 s  pkg   124.964 J  dram    4.159 J  checksum ok
+C-explicit-b0.25-C10-L01 rep  1            time    6.409 s  pkg   123.284 J  dram    4.093 J  checksum ok
+C-pool-b0.75-C10-L01 rep  0 (warm-up)  time   19.915 s  pkg    71.020 J  dram   11.384 J  checksum ok
+C-pool-b0.75-C10-L01 rep  1            time   21.492 s  pkg    59.717 J  dram   12.215 J  checksum ok
+C-fj-b0.50-C10-L01 rep  0 (warm-up)  time   17.986 s  pkg    69.949 J  dram   10.287 J  checksum ok
+C-fj-b0.50-C10-L01 rep  1            time   19.906 s  pkg    52.186 J  dram   11.216 J  checksum ok
+B-explicit-b0.50-C100-L01 rep  0 (warm-up)  time    5.064 s  pkg    62.696 J  dram    6.197 J  checksum ok
+B-explicit-b0.50-C100-L01 rep  1            time    4.325 s  pkg    69.614 J  dram    5.674 J  checksum ok
+C-pool-b0.95-C100-L01 rep  0 (warm-up)  time   12.516 s  pkg    60.364 J  dram    7.416 J  checksum ok
+C-pool-b0.95-C100-L01 rep  1            time   13.435 s  pkg    51.093 J  dram    7.823 J  checksum ok
+B-fj-b0.95-C1000-L01 rep  0 (warm-up)  time   56.478 s  pkg    49.889 J  dram   34.966 J  checksum ok
+B-fj-b0.95-C1000-L01 rep  1            time   56.453 s  pkg    48.930 J  dram   34.889 J  checksum ok
+B-vt-b0.75-C10-L01 rep  0 (warm-up)  time   19.813 s  pkg    50.507 J  dram   14.721 J  checksum ok
+B-vt-b0.75-C10-L01 rep  1            time   20.116 s  pkg    46.154 J  dram   14.807 J  checksum ok
+A-pool-b0.00-C1000-L01 rep  0 (warm-up)  time    2.535 s  pkg    54.927 J  dram    1.415 J  checksum ok
+A-pool-b0.00-C1000-L01 rep  1            time    2.518 s  pkg    54.529 J  dram    1.403 J  checksum ok
+B-fj-b0.25-C1000-L01 rep  0 (warm-up)  time    3.614 s  pkg    80.696 J  dram    5.096 J  checksum ok
+B-fj-b0.25-C1000-L01 rep  1            time    3.596 s  pkg    79.996 J  dram    5.074 J  checksum ok
+B-vt-b0.25-C10000-L01 rep  0 (warm-up)  time    2.579 s  pkg    78.707 J  dram    4.413 J  checksum ok
+B-vt-b0.25-C10000-L01 rep  1            time    2.541 s  pkg    77.650 J  dram    4.364 J  checksum ok
+A-pool-b0.50-C1000-L01 rep  0 (warm-up)  time    3.159 s  pkg    60.565 J  dram    1.763 J  checksum ok
+A-pool-b0.50-C1000-L01 rep  1            time    3.313 s  pkg    60.786 J  dram    1.844 J  checksum ok
+B-pool-b0.50-C100-L01 rep  0 (warm-up)  time    3.597 s  pkg    72.278 J  dram    5.115 J  checksum ok
+B-pool-b0.50-C100-L01 rep  1            time    3.936 s  pkg    67.042 J  dram    5.373 J  checksum ok
+B-pool-b0.75-C10000-L01 rep  0 (warm-up)  time    2.830 s  pkg    79.666 J  dram    4.590 J  checksum ok
+B-pool-b0.75-C10000-L01 rep  1            time    2.795 s  pkg    79.153 J  dram    4.547 J  checksum ok
+A-explicit-b0.95-C100-L01 rep  0 (warm-up)  time   15.976 s  pkg    43.346 J  dram    9.078 J  checksum ok
+A-explicit-b0.95-C100-L01 rep  1            time   16.243 s  pkg    43.957 J  dram    9.223 J  checksum ok
+A-explicit-b0.75-C100-L01 rep  0 (warm-up)  time    4.474 s  pkg    71.172 J  dram    2.537 J  checksum ok
+A-explicit-b0.75-C100-L01 rep  1            time    4.553 s  pkg    72.845 J  dram    2.564 J  checksum ok
+A-vt-b0.00-C100-L01 rep  0 (warm-up)  time    2.690 s  pkg    56.903 J  dram    1.506 J  checksum ok
+A-vt-b0.00-C100-L01 rep  1            time    2.616 s  pkg    55.719 J  dram    1.461 J  checksum ok
+B-fj-b0.75-C100-L01 rep  0 (warm-up)  time   16.785 s  pkg    46.737 J  dram   12.921 J  checksum ok
+B-fj-b0.75-C100-L01 rep  1            time   16.915 s  pkg    46.438 J  dram   12.957 J  checksum ok
+A-pool-b0.75-C100-L01 rep  0 (warm-up)  time    3.799 s  pkg    63.157 J  dram    2.127 J  checksum ok
+A-pool-b0.75-C100-L01 rep  1            time    3.804 s  pkg    62.966 J  dram    2.122 J  checksum ok
+B-pool-b0.00-C100-L01 rep  0 (warm-up)  time    2.700 s  pkg    78.219 J  dram    4.462 J  checksum ok
+B-pool-b0.00-C100-L01 rep  1            time    2.664 s  pkg    77.742 J  dram    4.428 J  checksum ok
+C-pool-b0.75-C100-L01 rep  0 (warm-up)  time    5.151 s  pkg    80.718 J  dram    3.166 J  checksum ok
+C-pool-b0.75-C100-L01 rep  1            time    5.189 s  pkg    75.013 J  dram    3.137 J  checksum ok
+B-explicit-b0.75-C10-L01 rep  0 (warm-up)  time   13.433 s  pkg    88.758 J  dram   11.156 J  checksum ok
+B-explicit-b0.75-C10-L01 rep  1            time   13.559 s  pkg    87.135 J  dram   11.228 J  checksum ok
+C-vt-b0.75-C10000-L01 rep  0 (warm-up)  time    3.355 s  pkg    89.947 J  dram    2.450 J  checksum ok
+C-vt-b0.75-C10000-L01 rep  1            time    3.058 s  pkg    79.884 J  dram    2.054 J  checksum ok
+C-fj-b0.95-C100-L01 rep  0 (warm-up)  time   61.435 s  pkg    75.421 J  dram   36.788 J  checksum ok
+C-fj-b0.95-C100-L01 rep  1            time   61.100 s  pkg    67.871 J  dram   36.386 J  checksum ok
+A-pool-b0.75-C10000-L01 rep  0 (warm-up)  time    2.882 s  pkg    58.854 J  dram    1.614 J  checksum ok
+A-pool-b0.75-C10000-L01 rep  1            time    2.976 s  pkg    59.523 J  dram    1.658 J  checksum ok
+B-pool-b0.95-C10000-L01 rep  0 (warm-up)  time    2.707 s  pkg    79.290 J  dram    4.533 J  checksum ok
+B-pool-b0.95-C10000-L01 rep  1            time    2.666 s  pkg    78.748 J  dram    4.490 J  checksum ok
+A-fj-b0.50-C100-L01 rep  0 (warm-up)  time    7.832 s  pkg    45.400 J  dram    4.424 J  checksum ok
+A-fj-b0.50-C100-L01 rep  1            time    6.562 s  pkg    53.347 J  dram    3.750 J  checksum ok
+A-fj-b0.75-C1000-L01 rep  0 (warm-up)  time   15.918 s  pkg    39.624 J  dram    9.132 J  checksum ok
+A-fj-b0.75-C1000-L01 rep  1            time   16.514 s  pkg    37.635 J  dram    9.474 J  checksum ok
+C-pool-b0.75-C1000-L01 rep  0 (warm-up)  time    3.804 s  pkg    85.229 J  dram    2.384 J  checksum ok
+C-pool-b0.75-C1000-L01 rep  1            time    3.772 s  pkg    84.076 J  dram    2.422 J  checksum ok
+A-explicit-b0.75-C1000-L01 rep  0 (warm-up)  time    2.963 s  pkg    58.525 J  dram    1.662 J  checksum ok
+A-explicit-b0.75-C1000-L01 rep  1            time    3.116 s  pkg    60.540 J  dram    1.739 J  checksum ok
+C-pool-b0.95-C10000-L01 rep  0 (warm-up)  time    3.435 s  pkg    80.787 J  dram    2.513 J  checksum ok
+C-pool-b0.95-C10000-L01 rep  1            time    3.236 s  pkg    76.715 J  dram    2.251 J  checksum ok
+B-vt-b0.25-C1000-L01 rep  0 (warm-up)  time    2.605 s  pkg    78.405 J  dram    4.420 J  checksum ok
+B-vt-b0.25-C1000-L01 rep  1            time    2.555 s  pkg    77.396 J  dram    4.363 J  checksum ok
+A-explicit-b0.50-C100-L01 rep  0 (warm-up)  time    4.968 s  pkg    48.570 J  dram    2.788 J  checksum ok
+A-explicit-b0.50-C100-L01 rep  1            time    4.485 s  pkg    60.125 J  dram    2.515 J  checksum ok
+B-explicit-b0.75-C100-L01 rep  0 (warm-up)  time    4.348 s  pkg    87.160 J  dram    5.626 J  checksum ok
+B-explicit-b0.75-C100-L01 rep  1            time    6.596 s  pkg    72.834 J  dram    7.130 J  checksum ok
+C-pool-b0.00-C1000-L01 rep  0 (warm-up)  time    2.531 s  pkg    55.744 J  dram    1.411 J  checksum ok
+C-pool-b0.00-C1000-L01 rep  1            time    2.517 s  pkg    55.370 J  dram    1.402 J  checksum ok
+B-pool-b0.50-C1000-L01 rep  0 (warm-up)  time    2.664 s  pkg    79.336 J  dram    4.433 J  checksum ok
+B-pool-b0.50-C1000-L01 rep  1            time    2.644 s  pkg    79.166 J  dram    4.412 J  checksum ok
+B-fj-b0.00-C10-L01 rep  0 (warm-up)  time    4.176 s  pkg    84.872 J  dram    5.485 J  checksum ok
+B-fj-b0.00-C10-L01 rep  1            time    4.152 s  pkg    84.008 J  dram    5.458 J  checksum ok
+C-explicit-b0.95-C10-L01 rep  0 (warm-up)  time   58.505 s  pkg    95.940 J  dram   35.783 J  checksum ok
+C-explicit-b0.95-C10-L01 rep  1            time   58.739 s  pkg    90.175 J  dram   35.832 J  checksum ok
+C-fj-b0.00-C10000-L01 rep  0 (warm-up)  time    2.518 s  pkg    55.256 J  dram    1.406 J  checksum ok
+C-fj-b0.00-C10000-L01 rep  1            time    2.502 s  pkg    55.120 J  dram    1.395 J  checksum ok
+A-explicit-b0.75-C10-L01 rep  0 (warm-up)  time   22.591 s  pkg    50.284 J  dram   12.704 J  checksum ok
+A-explicit-b0.75-C10-L01 rep  1            time   22.864 s  pkg    49.346 J  dram   12.832 J  checksum ok
+C-pool-b0.25-C10-L01 rep  0 (warm-up)  time    5.864 s  pkg   105.545 J  dram    3.464 J  checksum ok
+C-pool-b0.25-C10-L01 rep  1            time    5.853 s  pkg   103.158 J  dram    3.494 J  checksum ok
+C-fj-b0.00-C100-L01 rep  0 (warm-up)  time    2.640 s  pkg    55.886 J  dram    1.475 J  checksum ok
+C-fj-b0.00-C100-L01 rep  1            time    2.637 s  pkg    56.355 J  dram    1.473 J  checksum ok
+C-explicit-b0.75-C10-L01 rep  0 (warm-up)  time   25.122 s  pkg    74.270 J  dram   14.680 J  checksum ok
+C-explicit-b0.75-C10-L01 rep  1            time   25.459 s  pkg    73.198 J  dram   14.861 J  checksum ok
+B-vt-b0.95-C1000-L01 rep  0 (warm-up)  time    2.994 s  pkg    80.814 J  dram    4.646 J  checksum ok
+B-vt-b0.95-C1000-L01 rep  1            time    2.925 s  pkg    78.496 J  dram    4.571 J  checksum ok
+B-pool-b0.95-C10-L01 rep  0 (warm-up)  time   52.495 s  pkg    57.225 J  dram   33.256 J  checksum ok
+B-pool-b0.95-C10-L01 rep  1            time   52.491 s  pkg    55.912 J  dram   33.171 J  checksum ok
+B-fj-b0.25-C10000-L01 rep  0 (warm-up)  time    3.636 s  pkg    81.645 J  dram    5.095 J  checksum ok
+B-fj-b0.25-C10000-L01 rep  1            time    3.626 s  pkg    81.124 J  dram    5.071 J  checksum ok
+C-vt-b0.95-C10000-L01 rep  0 (warm-up)  time    3.413 s  pkg    92.479 J  dram    2.624 J  checksum ok
+C-vt-b0.95-C10000-L01 rep  1            time    3.155 s  pkg    83.381 J  dram    2.285 J  checksum ok
+C-vt-b0.95-C100-L01 rep  0 (warm-up)  time    7.913 s  pkg    87.683 J  dram    4.841 J  checksum ok
+C-vt-b0.95-C100-L01 rep  1            time    8.520 s  pkg    78.968 J  dram    5.100 J  checksum ok
+A-fj-b0.75-C100-L01 rep  0 (warm-up)  time   17.003 s  pkg    38.132 J  dram    9.842 J  checksum ok
+A-fj-b0.75-C100-L01 rep  1            time   17.319 s  pkg    37.964 J  dram   10.000 J  checksum ok
+B-vt-b0.00-C10000-L01 rep  0 (warm-up)  time    2.556 s  pkg    77.823 J  dram    4.378 J  checksum ok
+B-vt-b0.00-C10000-L01 rep  1            time    2.502 s  pkg    76.432 J  dram    4.319 J  checksum ok
+C-vt-b0.25-C10-L01 rep  0 (warm-up)  time   11.299 s  pkg    84.145 J  dram    6.590 J  checksum ok
+C-vt-b0.25-C10-L01 rep  1            time    7.658 s  pkg    99.772 J  dram    4.473 J  checksum ok
+B-explicit-b0.25-C100-L01 rep  0 (warm-up)  time    3.531 s  pkg    82.658 J  dram    5.110 J  checksum ok
+B-explicit-b0.25-C100-L01 rep  1            time    3.507 s  pkg    82.410 J  dram    5.085 J  checksum ok
+B-fj-b0.95-C10000-L01 rep  0 (warm-up)  time   56.506 s  pkg    49.791 J  dram   34.962 J  checksum ok
+B-fj-b0.95-C10000-L01 rep  1            time   56.419 s  pkg    49.499 J  dram   34.887 J  checksum ok
+B-explicit-b0.50-C10-L01 rep  0 (warm-up)  time   17.696 s  pkg    55.579 J  dram   14.080 J  checksum ok
+B-explicit-b0.50-C10-L01 rep  1            time   19.116 s  pkg    53.804 J  dram   14.906 J  checksum ok
+A-fj-b0.50-C10-L01 rep  0 (warm-up)  time   16.221 s  pkg    41.985 J  dram    9.151 J  checksum ok
+A-fj-b0.50-C10-L01 rep  1            time   17.536 s  pkg    36.784 J  dram    9.832 J  checksum ok
+B-vt-b0.75-C10000-L01 rep  0 (warm-up)  time    2.620 s  pkg    80.756 J  dram    4.443 J  checksum ok
+B-vt-b0.75-C10000-L01 rep  1            time    2.558 s  pkg    79.249 J  dram    4.377 J  checksum ok
+A-pool-b0.75-C1000-L01 rep  0 (warm-up)  time    3.039 s  pkg    59.925 J  dram    1.696 J  checksum ok
+A-pool-b0.75-C1000-L01 rep  1            time    3.080 s  pkg    60.365 J  dram    1.717 J  checksum ok
+A-pool-b0.95-C1000-L01 rep  0 (warm-up)  time    3.151 s  pkg    60.843 J  dram    1.775 J  checksum ok
+A-pool-b0.95-C1000-L01 rep  1            time    3.145 s  pkg    61.342 J  dram    1.760 J  checksum ok
+C-vt-b0.95-C10-L01 rep  0 (warm-up)  time   53.882 s  pkg    75.317 J  dram   32.514 J  checksum ok
+C-vt-b0.95-C10-L01 rep  1            time   53.811 s  pkg    70.828 J  dram   32.210 J  checksum ok
+B-explicit-b0.00-C100-L01 rep  0 (warm-up)  time    2.686 s  pkg    77.242 J  dram    4.460 J  checksum ok
+B-explicit-b0.00-C100-L01 rep  1            time    2.663 s  pkg    77.395 J  dram    4.441 J  checksum ok
+A-vt-b0.00-C10-L01 rep  0 (warm-up)  time    4.141 s  pkg    63.213 J  dram    2.317 J  checksum ok
+A-vt-b0.00-C10-L01 rep  1            time    4.103 s  pkg    61.346 J  dram    2.288 J  checksum ok
+C-vt-b0.95-C1000-L01 rep  0 (warm-up)  time    3.693 s  pkg    93.869 J  dram    2.695 J  checksum ok
+C-vt-b0.95-C1000-L01 rep  1            time    3.472 s  pkg    86.943 J  dram    2.353 J  checksum ok
+C-vt-b0.00-C1000-L01 rep  0 (warm-up)  time    2.552 s  pkg    56.277 J  dram    1.430 J  checksum ok
+C-vt-b0.00-C1000-L01 rep  1            time    2.541 s  pkg    55.599 J  dram    1.427 J  checksum ok
+A-pool-b0.25-C10000-L01 rep  0 (warm-up)  time    3.130 s  pkg    59.490 J  dram    1.747 J  checksum ok
+A-pool-b0.25-C10000-L01 rep  1            time    3.168 s  pkg    61.037 J  dram    1.764 J  checksum ok
+C-fj-b0.50-C1000-L01 rep  0 (warm-up)  time    6.901 s  pkg    95.547 J  dram    4.007 J  checksum ok
+C-fj-b0.50-C1000-L01 rep  1            time    8.113 s  pkg    77.802 J  dram    4.627 J  checksum ok
+C-pool-b0.00-C10000-L01 rep  0 (warm-up)  time    2.523 s  pkg    55.841 J  dram    1.408 J  checksum ok
+C-pool-b0.00-C10000-L01 rep  1            time    2.504 s  pkg    55.261 J  dram    1.395 J  checksum ok
+A-fj-b0.00-C10-L01 rep  0 (warm-up)  time    4.150 s  pkg    63.960 J  dram    2.325 J  checksum ok
+A-fj-b0.00-C10-L01 rep  1            time    4.119 s  pkg    60.894 J  dram    2.293 J  checksum ok
+C-vt-b0.75-C1000-L01 rep  0 (warm-up)  time    3.359 s  pkg    89.235 J  dram    2.320 J  checksum ok
+C-vt-b0.75-C1000-L01 rep  1            time    3.178 s  pkg    84.274 J  dram    2.065 J  checksum ok
+A-vt-b0.75-C1000-L01 rep  0 (warm-up)  time    2.737 s  pkg    66.027 J  dram    1.548 J  checksum ok
+A-vt-b0.75-C1000-L01 rep  1            time    2.735 s  pkg    66.118 J  dram    1.535 J  checksum ok
+A-pool-b0.75-C10-L01 rep  0 (warm-up)  time   20.171 s  pkg    42.229 J  dram   11.788 J  checksum ok
+A-pool-b0.75-C10-L01 rep  1            time   21.014 s  pkg    40.812 J  dram   12.222 J  checksum ok
+A-fj-b0.95-C10-L01 rep  0 (warm-up)  time   89.897 s  pkg    51.984 J  dram   50.776 J  checksum ok
+A-fj-b0.95-C10-L01 rep  1            time   90.107 s  pkg    51.393 J  dram   50.806 J  checksum ok
+C-pool-b0.00-C10-L01 rep  0 (warm-up)  time    4.302 s  pkg    61.723 J  dram    2.398 J  checksum ok
+C-pool-b0.00-C10-L01 rep  1            time    4.273 s  pkg    60.464 J  dram    2.380 J  checksum ok
+A-fj-b0.00-C100-L01 rep  0 (warm-up)  time    2.662 s  pkg    55.766 J  dram    1.485 J  checksum ok
+A-fj-b0.00-C100-L01 rep  1            time    2.639 s  pkg    55.749 J  dram    1.473 J  checksum ok
+B-pool-b0.25-C100-L01 rep  0 (warm-up)  time    3.305 s  pkg    80.091 J  dram    4.932 J  checksum ok
+B-pool-b0.25-C100-L01 rep  1            time    3.278 s  pkg    79.107 J  dram    4.902 J  checksum ok
+B-fj-b0.00-C100-L01 rep  0 (warm-up)  time    2.645 s  pkg    77.238 J  dram    4.427 J  checksum ok
+B-fj-b0.00-C100-L01 rep  1            time    2.627 s  pkg    76.910 J  dram    4.404 J  checksum ok
+C-explicit-b0.50-C10-L01 rep  0 (warm-up)  time   10.318 s  pkg   100.938 J  dram    6.324 J  checksum ok
+C-explicit-b0.50-C10-L01 rep  1            time   13.353 s  pkg    86.484 J  dram    7.912 J  checksum ok
+B-pool-b0.00-C1000-L01 rep  0 (warm-up)  time    2.516 s  pkg    75.917 J  dram    4.320 J  checksum ok
+B-pool-b0.00-C1000-L01 rep  1            time    2.501 s  pkg    75.599 J  dram    4.305 J  checksum ok
+A-pool-b0.25-C1000-L01 rep  0 (warm-up)  time    3.173 s  pkg    60.395 J  dram    1.772 J  checksum ok
+A-pool-b0.25-C1000-L01 rep  1            time    3.195 s  pkg    60.887 J  dram    1.780 J  checksum ok
+C-pool-b0.50-C10000-L01 rep  0 (warm-up)  time    4.141 s  pkg    87.725 J  dram    2.574 J  checksum ok
+C-pool-b0.50-C10000-L01 rep  1            time    4.003 s  pkg    82.882 J  dram    2.374 J  checksum ok
+C-pool-b0.95-C1000-L01 rep  0 (warm-up)  time    3.910 s  pkg    83.142 J  dram    2.737 J  checksum ok
+C-pool-b0.95-C1000-L01 rep  1            time    3.939 s  pkg    81.517 J  dram    2.795 J  checksum ok
+A-vt-b0.50-C10000-L01 rep  0 (warm-up)  time    2.667 s  pkg    65.456 J  dram    1.524 J  checksum ok
+A-vt-b0.50-C10000-L01 rep  1            time    2.783 s  pkg    68.282 J  dram    1.561 J  checksum ok
+A-pool-b0.50-C10-L01 rep  0 (warm-up)  time   13.474 s  pkg    42.743 J  dram    7.559 J  checksum ok
+A-pool-b0.50-C10-L01 rep  1            time   15.358 s  pkg    36.812 J  dram    8.598 J  checksum ok
+A-explicit-b0.00-C10000-L01 rep  0 (warm-up)  time    2.533 s  pkg    54.873 J  dram    1.414 J  checksum ok
+A-explicit-b0.00-C10000-L01 rep  1            time    2.517 s  pkg    54.704 J  dram    1.401 J  checksum ok
+B-explicit-b0.95-C10-L01 rep  0 (warm-up)  time   55.646 s  pkg    76.349 J  dram   35.616 J  checksum ok
+B-explicit-b0.95-C10-L01 rep  1            time   55.680 s  pkg    74.462 J  dram   35.593 J  checksum ok
+A-pool-b0.95-C10000-L01 rep  0 (warm-up)  time    2.706 s  pkg    58.050 J  dram    1.529 J  checksum ok
+A-pool-b0.95-C10000-L01 rep  1            time    2.691 s  pkg    59.262 J  dram    1.503 J  checksum ok
+B-explicit-b0.00-C10-L01 rep  0 (warm-up)  time    4.732 s  pkg    95.934 J  dram    5.953 J  checksum ok
+B-explicit-b0.00-C10-L01 rep  1            time    4.768 s  pkg    95.775 J  dram    5.977 J  checksum ok
+B-fj-b0.75-C10000-L01 rep  0 (warm-up)  time   16.124 s  pkg    45.515 J  dram   12.574 J  checksum ok
+B-fj-b0.75-C10000-L01 rep  1            time   16.209 s  pkg    43.351 J  dram   12.605 J  checksum ok
+A-pool-b0.25-C100-L01 rep  0 (warm-up)  time    3.461 s  pkg    61.074 J  dram    1.930 J  checksum ok
+A-pool-b0.25-C100-L01 rep  1            time    3.404 s  pkg    61.373 J  dram    1.897 J  checksum ok
+B-vt-b0.95-C10-L01 rep  0 (warm-up)  time   52.163 s  pkg    55.364 J  dram   33.092 J  checksum ok
+B-vt-b0.95-C10-L01 rep  1            time   51.988 s  pkg    56.358 J  dram   32.836 J  checksum ok
+C-explicit-b0.95-C1000-L01 rep  0 (warm-up)  time    4.762 s  pkg    84.021 J  dram    3.355 J  checksum ok
+C-explicit-b0.95-C1000-L01 rep  1            time    4.614 s  pkg    82.856 J  dram    3.194 J  checksum ok
+B-pool-b0.25-C10000-L01 rep  0 (warm-up)  time    3.081 s  pkg    79.807 J  dram    4.786 J  checksum ok
+B-pool-b0.25-C10000-L01 rep  1            time    3.058 s  pkg    79.162 J  dram    4.760 J  checksum ok
+C-vt-b0.50-C10000-L01 rep  0 (warm-up)  time    3.322 s  pkg    89.570 J  dram    2.364 J  checksum ok
+C-vt-b0.50-C10000-L01 rep  1            time    3.079 s  pkg    80.770 J  dram    2.100 J  checksum ok
+A-pool-b0.25-C10-L01 rep  0 (warm-up)  time    7.779 s  pkg    53.794 J  dram    4.343 J  checksum ok
+A-pool-b0.25-C10-L01 rep  1            time   13.642 s  pkg    36.880 J  dram    7.600 J  checksum ok
+C-fj-b0.25-C10000-L01 rep  0 (warm-up)  time    4.774 s  pkg    97.839 J  dram    2.871 J  checksum ok
+C-fj-b0.25-C10000-L01 rep  1            time    4.608 s  pkg    91.297 J  dram    2.662 J  checksum ok
+C-explicit-b0.25-C100-L01 rep  0 (warm-up)  time    4.435 s  pkg    95.659 J  dram    2.796 J  checksum ok
+C-explicit-b0.25-C100-L01 rep  1            time    4.295 s  pkg    91.379 J  dram    2.594 J  checksum ok
+B-vt-b0.50-C10000-L01 rep  0 (warm-up)  time    2.582 s  pkg    78.900 J  dram    4.420 J  checksum ok
+B-vt-b0.50-C10000-L01 rep  1            time    2.537 s  pkg    77.343 J  dram    4.361 J  checksum ok
+B-vt-b0.50-C1000-L01 rep  0 (warm-up)  time    2.614 s  pkg    79.500 J  dram    4.421 J  checksum ok
+B-vt-b0.50-C1000-L01 rep  1            time    2.551 s  pkg    77.929 J  dram    4.353 J  checksum ok
+B-explicit-b0.00-C10000-L01 rep  0 (warm-up)  time    2.525 s  pkg    76.070 J  dram    4.317 J  checksum ok
+B-explicit-b0.00-C10000-L01 rep  1            time    2.506 s  pkg    76.002 J  dram    4.301 J  checksum ok
+C-explicit-b0.75-C10000-L01 rep  0 (warm-up)  time    3.812 s  pkg    84.911 J  dram    2.434 J  checksum ok
+C-explicit-b0.75-C10000-L01 rep  1            time    3.688 s  pkg    82.786 J  dram    2.330 J  checksum ok
+A-explicit-b0.75-C10000-L01 rep  0 (warm-up)  time    2.784 s  pkg    56.687 J  dram    1.556 J  checksum ok
+A-explicit-b0.75-C10000-L01 rep  1            time    2.801 s  pkg    56.561 J  dram    1.561 J  checksum ok
+C-vt-b0.75-C100-L01 rep  0 (warm-up)  time    4.008 s  pkg    95.841 J  dram    2.617 J  checksum ok
+C-vt-b0.75-C100-L01 rep  1            time    3.879 s  pkg    90.988 J  dram    2.416 J  checksum ok
+B-pool-b0.50-C10-L01 rep  0 (warm-up)  time   14.365 s  pkg    50.682 J  dram   11.822 J  checksum ok
+B-pool-b0.50-C10-L01 rep  1            time   15.485 s  pkg    43.519 J  dram   12.547 J  checksum ok
+C-vt-b0.50-C100-L01 rep  0 (warm-up)  time    3.596 s  pkg    91.663 J  dram    2.365 J  checksum ok
+C-vt-b0.50-C100-L01 rep  1            time    3.482 s  pkg    87.816 J  dram    2.196 J  checksum ok
+C-fj-b0.25-C10-L01 rep  0 (warm-up)  time   10.740 s  pkg    90.297 J  dram    6.317 J  checksum ok
+C-fj-b0.25-C10-L01 rep  1            time   15.409 s  pkg    64.782 J  dram    8.743 J  checksum ok
+A-vt-b0.75-C100-L01 rep  0 (warm-up)  time    3.503 s  pkg    68.074 J  dram    1.977 J  checksum ok
+A-vt-b0.75-C100-L01 rep  1            time    3.755 s  pkg    61.822 J  dram    2.105 J  checksum ok
+C-pool-b0.50-C10-L01 rep  0 (warm-up)  time   10.536 s  pkg    78.693 J  dram    6.073 J  checksum ok
+C-pool-b0.50-C10-L01 rep  1            time   11.841 s  pkg    65.083 J  dram    6.734 J  checksum ok
+B-explicit-b0.25-C10-L01 rep  0 (warm-up)  time    5.905 s  pkg   104.917 J  dram    6.718 J  checksum ok
+B-explicit-b0.25-C10-L01 rep  1            time    5.890 s  pkg   104.924 J  dram    6.709 J  checksum ok
+C-fj-b0.50-C10000-L01 rep  0 (warm-up)  time    6.532 s  pkg   101.057 J  dram    3.949 J  checksum ok
+C-fj-b0.50-C10000-L01 rep  1            time    7.968 s  pkg    73.420 J  dram    4.604 J  checksum ok
+B-fj-b0.75-C10-L01 rep  0 (warm-up)  time   26.007 s  pkg    52.756 J  dram   18.394 J  checksum ok
+B-fj-b0.75-C10-L01 rep  1            time   26.267 s  pkg    49.680 J  dram   18.455 J  checksum ok
+A-explicit-b0.25-C100-L01 rep  0 (warm-up)  time    3.570 s  pkg    62.900 J  dram    2.003 J  checksum ok
+A-explicit-b0.25-C100-L01 rep  1            time    3.671 s  pkg    66.462 J  dram    2.053 J  checksum ok
+A-explicit-b0.50-C1000-L01 rep  0 (warm-up)  time    2.709 s  pkg    57.041 J  dram    1.515 J  checksum ok
+A-explicit-b0.50-C1000-L01 rep  1            time    2.683 s  pkg    56.878 J  dram    1.496 J  checksum ok
+C-vt-b0.00-C100-L01 rep  0 (warm-up)  time    2.672 s  pkg    57.090 J  dram    1.500 J  checksum ok
+C-vt-b0.00-C100-L01 rep  1            time    2.628 s  pkg    55.819 J  dram    1.469 J  checksum ok
+A-fj-b0.95-C1000-L01 rep  0 (warm-up)  time   56.874 s  pkg    40.937 J  dram   32.058 J  checksum ok
+A-fj-b0.95-C1000-L01 rep  1            time   56.972 s  pkg    40.553 J  dram   32.083 J  checksum ok
+C-pool-b0.25-C100-L01 rep  0 (warm-up)  time    4.431 s  pkg    93.253 J  dram    2.669 J  checksum ok
+C-pool-b0.25-C100-L01 rep  1            time    4.289 s  pkg    88.740 J  dram    2.565 J  checksum ok
+B-vt-b0.50-C10-L01 rep  0 (warm-up)  time   14.743 s  pkg    47.560 J  dram   12.139 J  checksum ok
+B-vt-b0.50-C10-L01 rep  1            time   14.527 s  pkg    46.195 J  dram   11.999 J  checksum ok
+C-pool-b0.25-C10000-L01 rep  0 (warm-up)  time    4.135 s  pkg    90.641 J  dram    2.509 J  checksum ok
+C-pool-b0.25-C10000-L01 rep  1            time    4.036 s  pkg    86.848 J  dram    2.382 J  checksum ok
+A-pool-b0.50-C10000-L01 rep  0 (warm-up)  time    2.890 s  pkg    58.685 J  dram    1.617 J  checksum ok
+A-pool-b0.50-C10000-L01 rep  1            time    3.322 s  pkg    61.050 J  dram    1.850 J  checksum ok
+A-explicit-b0.00-C100-L01 rep  0 (warm-up)  time    2.957 s  pkg    58.398 J  dram    1.656 J  checksum ok
+A-explicit-b0.00-C100-L01 rep  1            time    2.805 s  pkg    57.899 J  dram    1.571 J  checksum ok
+B-explicit-b0.75-C10000-L01 rep  0 (warm-up)  time    2.800 s  pkg    77.890 J  dram    4.551 J  checksum ok
+B-explicit-b0.75-C10000-L01 rep  1            time    2.781 s  pkg    77.892 J  dram    4.538 J  checksum ok
+A-fj-b0.00-C1000-L01 rep  0 (warm-up)  time    2.518 s  pkg    55.234 J  dram    1.405 J  checksum ok
+A-fj-b0.00-C1000-L01 rep  1            time    2.509 s  pkg    55.189 J  dram    1.397 J  checksum ok
+A-vt-b0.00-C1000-L01 rep  0 (warm-up)  time    2.552 s  pkg    56.364 J  dram    1.430 J  checksum ok
+A-vt-b0.00-C1000-L01 rep  1            time    2.519 s  pkg    54.907 J  dram    1.408 J  checksum ok
+B-pool-b0.00-C10-L01 rep  0 (warm-up)  time    4.277 s  pkg    83.276 J  dram    5.544 J  checksum ok
+B-pool-b0.00-C10-L01 rep  1            time    4.266 s  pkg    83.313 J  dram    5.530 J  checksum ok
+A-fj-b0.00-C10000-L01 rep  0 (warm-up)  time    2.520 s  pkg    55.522 J  dram    1.408 J  checksum ok
+A-fj-b0.00-C10000-L01 rep  1            time    2.502 s  pkg    54.527 J  dram    1.394 J  checksum ok
+C-fj-b0.95-C1000-L01 rep  0 (warm-up)  time   59.154 s  pkg    74.148 J  dram   35.467 J  checksum ok
+C-fj-b0.95-C1000-L01 rep  1            time   58.758 s  pkg    69.493 J  dram   35.049 J  checksum ok
+B-fj-b0.75-C1000-L01 rep  0 (warm-up)  time   16.021 s  pkg    47.775 J  dram   12.625 J  checksum ok
+B-fj-b0.75-C1000-L01 rep  1            time   16.268 s  pkg    44.701 J  dram   12.782 J  checksum ok
+A-explicit-b0.00-C1000-L01 rep  0 (warm-up)  time    2.551 s  pkg    55.016 J  dram    1.425 J  checksum ok
+A-explicit-b0.00-C1000-L01 rep  1            time    2.623 s  pkg    55.417 J  dram    1.462 J  checksum ok
+C-fj-b0.75-C10-L01 rep  0 (warm-up)  time   27.573 s  pkg    70.423 J  dram   15.666 J  checksum ok
+C-fj-b0.75-C10-L01 rep  1            time   28.425 s  pkg    65.268 J  dram   16.052 J  checksum ok
+B-explicit-b0.95-C10000-L01 rep  0 (warm-up)  time    2.847 s  pkg    76.876 J  dram    4.628 J  checksum ok
+B-explicit-b0.95-C10000-L01 rep  1            time    2.878 s  pkg    76.065 J  dram    4.640 J  checksum ok
+A-vt-b0.95-C1000-L01 rep  0 (warm-up)  time    3.167 s  pkg    65.909 J  dram    1.790 J  checksum ok
+A-vt-b0.95-C1000-L01 rep  1            time    3.134 s  pkg    66.454 J  dram    1.758 J  checksum ok
+C-fj-b0.75-C100-L01 rep  0 (warm-up)  time   16.299 s  pkg    62.613 J  dram    9.254 J  checksum ok
+C-fj-b0.75-C100-L01 rep  1            time   17.848 s  pkg    57.079 J  dram   10.099 J  checksum ok
+C-explicit-b0.25-C10000-L01 rep  0 (warm-up)  time    4.193 s  pkg    90.859 J  dram    2.564 J  checksum ok
+C-explicit-b0.25-C10000-L01 rep  1            time    4.070 s  pkg    87.231 J  dram    2.424 J  checksum ok
+A-vt-b0.25-C10-L01 rep  0 (warm-up)  time    5.336 s  pkg    78.614 J  dram    3.002 J  checksum ok
+A-vt-b0.25-C10-L01 rep  1            time    5.849 s  pkg    69.989 J  dram    3.272 J  checksum ok
+A-vt-b0.25-C10000-L01 rep  0 (warm-up)  time    2.638 s  pkg    65.093 J  dram    1.506 J  checksum ok
+A-vt-b0.25-C10000-L01 rep  1            time    2.682 s  pkg    65.951 J  dram    1.508 J  checksum ok
+A-vt-b0.25-C1000-L01 rep  0 (warm-up)  time    2.674 s  pkg    65.630 J  dram    1.512 J  checksum ok
+A-vt-b0.25-C1000-L01 rep  1            time    2.676 s  pkg    65.988 J  dram    1.501 J  checksum ok
+B-explicit-b0.95-C100-L01 rep  0 (warm-up)  time   15.832 s  pkg    54.305 J  dram   13.156 J  checksum ok
+B-explicit-b0.95-C100-L01 rep  1            time   16.120 s  pkg    52.082 J  dram   13.364 J  checksum ok
+A-explicit-b0.00-C10-L01 rep  0 (warm-up)  time    4.763 s  pkg    78.890 J  dram    2.727 J  checksum ok
+A-explicit-b0.00-C10-L01 rep  1            time    4.762 s  pkg    78.306 J  dram    2.712 J  checksum ok
+A-fj-b0.50-C1000-L01 rep  0 (warm-up)  time    7.741 s  pkg    43.888 J  dram    4.334 J  checksum ok
+A-fj-b0.50-C1000-L01 rep  1            time    8.089 s  pkg    41.151 J  dram    4.524 J  checksum ok
+A-pool-b0.00-C10000-L01 rep  0 (warm-up)  time    2.523 s  pkg    55.571 J  dram    1.409 J  checksum ok
+A-pool-b0.00-C10000-L01 rep  1            time    2.506 s  pkg    55.289 J  dram    1.396 J  checksum ok
+C-fj-b0.50-C100-L01 rep  0 (warm-up)  time    7.489 s  pkg    94.490 J  dram    4.372 J  checksum ok
+C-fj-b0.50-C100-L01 rep  1            time    8.248 s  pkg    83.255 J  dram    4.748 J  checksum ok
+A-explicit-b0.95-C1000-L01 rep  0 (warm-up)  time    5.023 s  pkg    56.064 J  dram    2.879 J  checksum ok
+A-explicit-b0.95-C1000-L01 rep  1            time    5.171 s  pkg    58.577 J  dram    2.944 J  checksum ok
+C-explicit-b0.50-C10000-L01 rep  0 (warm-up)  time    4.116 s  pkg    90.037 J  dram    2.571 J  checksum ok
+C-explicit-b0.50-C10000-L01 rep  1            time    4.025 s  pkg    83.294 J  dram    2.380 J  checksum ok
+B-explicit-b0.25-C10000-L01 rep  0 (warm-up)  time    3.134 s  pkg    79.618 J  dram    4.811 J  checksum ok
+B-explicit-b0.25-C10000-L01 rep  1            time    3.118 s  pkg    80.011 J  dram    4.800 J  checksum ok
+A-fj-b0.25-C1000-L01 rep  0 (warm-up)  time    3.700 s  pkg    62.605 J  dram    2.068 J  checksum ok
+A-fj-b0.25-C1000-L01 rep  1            time    3.734 s  pkg    63.207 J  dram    2.090 J  checksum ok
+B-vt-b0.00-C1000-L01 rep  0 (warm-up)  time    2.551 s  pkg    78.364 J  dram    4.362 J  checksum ok
+B-vt-b0.00-C1000-L01 rep  1            time    2.513 s  pkg    77.407 J  dram    4.327 J  checksum ok
+B-fj-b0.00-C1000-L01 rep  0 (warm-up)  time    2.538 s  pkg    78.086 J  dram    4.345 J  checksum ok
+B-fj-b0.00-C1000-L01 rep  1            time    2.510 s  pkg    77.392 J  dram    4.323 J  checksum ok
+C-fj-b0.25-C1000-L01 rep  0 (warm-up)  time    4.806 s  pkg    98.628 J  dram    2.835 J  checksum ok
+C-fj-b0.25-C1000-L01 rep  1            time    4.754 s  pkg    97.158 J  dram    2.777 J  checksum ok
+A-fj-b0.95-C100-L01 rep  0 (warm-up)  time   59.144 s  pkg    41.954 J  dram   33.371 J  checksum ok
+A-fj-b0.95-C100-L01 rep  1            time   59.328 s  pkg    41.337 J  dram   33.405 J  checksum ok
+A-vt-b0.50-C1000-L01 rep  0 (warm-up)  time    2.691 s  pkg    65.560 J  dram    1.520 J  checksum ok
+A-vt-b0.50-C1000-L01 rep  1            time    2.689 s  pkg    65.552 J  dram    1.508 J  checksum ok
+B-pool-b0.25-C10-L01 rep  0 (warm-up)  time    8.271 s  pkg    73.976 J  dram    8.062 J  checksum ok
+B-pool-b0.25-C10-L01 rep  1            time    6.165 s  pkg    73.021 J  dram    6.754 J  checksum ok
+A-fj-b0.95-C10000-L01 rep  0 (warm-up)  time   56.888 s  pkg    40.233 J  dram   32.075 J  checksum ok
+A-fj-b0.95-C10000-L01 rep  1            time   56.975 s  pkg    39.852 J  dram   32.081 J  checksum ok
+B-vt-b0.00-C10-L01 rep  0 (warm-up)  time    4.191 s  pkg    83.260 J  dram    5.498 J  checksum ok
+B-vt-b0.00-C10-L01 rep  1            time    4.154 s  pkg    82.071 J  dram    5.460 J  checksum ok
+A-vt-b0.95-C10-L01 rep  0 (warm-up)  time   52.442 s  pkg    48.758 J  dram   30.162 J  checksum ok
+A-vt-b0.95-C10-L01 rep  1            time   52.584 s  pkg    48.145 J  dram   30.095 J  checksum ok
+C-explicit-b0.95-C100-L01 rep  0 (warm-up)  time   15.246 s  pkg    74.959 J  dram    9.567 J  checksum ok
+C-explicit-b0.95-C100-L01 rep  1            time   14.347 s  pkg    73.212 J  dram    8.966 J  checksum ok
+A-explicit-b0.95-C10000-L01 rep  0 (warm-up)  time    2.723 s  pkg    56.779 J  dram    1.535 J  checksum ok
+A-explicit-b0.95-C10000-L01 rep  1            time    2.723 s  pkg    56.519 J  dram    1.523 J  checksum ok
+C-fj-b0.00-C1000-L01 rep  0 (warm-up)  time    2.519 s  pkg    55.148 J  dram    1.405 J  checksum ok
+C-fj-b0.00-C1000-L01 rep  1            time    2.509 s  pkg    55.042 J  dram    1.398 J  checksum ok
+A-explicit-b0.25-C1000-L01 rep  0 (warm-up)  time    3.192 s  pkg    58.252 J  dram    1.781 J  checksum ok
+A-explicit-b0.25-C1000-L01 rep  1            time    3.213 s  pkg    58.706 J  dram    1.791 J  checksum ok
+C-pool-b0.00-C100-L01 rep  0 (warm-up)  time    2.672 s  pkg    55.710 J  dram    1.492 J  checksum ok
+C-pool-b0.00-C100-L01 rep  1            time    2.661 s  pkg    55.335 J  dram    1.483 J  checksum ok
+C-explicit-b0.00-C10-L01 rep  0 (warm-up)  time    4.761 s  pkg    78.826 J  dram    2.722 J  checksum ok
+C-explicit-b0.00-C10-L01 rep  1            time    4.765 s  pkg    78.577 J  dram    2.712 J  checksum ok
+A-fj-b0.75-C10-L01 rep  0 (warm-up)  time   26.059 s  pkg    43.912 J  dram   15.311 J  checksum ok
+A-fj-b0.75-C10-L01 rep  1            time   26.718 s  pkg    42.848 J  dram   15.610 J  checksum ok
+B-vt-b0.95-C10000-L01 rep  0 (warm-up)  time    2.641 s  pkg    79.729 J  dram    4.461 J  checksum ok
+B-vt-b0.95-C10000-L01 rep  1            time    2.584 s  pkg    78.240 J  dram    4.395 J  checksum ok
+B-pool-b0.50-C10000-L01 rep  0 (warm-up)  time    2.652 s  pkg    78.706 J  dram    4.436 J  checksum ok
+B-pool-b0.50-C10000-L01 rep  1            time    2.614 s  pkg    78.035 J  dram    4.393 J  checksum ok
+B-fj-b0.50-C10-L01 rep  0 (warm-up)  time   17.630 s  pkg    48.893 J  dram   13.715 J  checksum ok
+B-fj-b0.50-C10-L01 rep  1            time   18.224 s  pkg    45.035 J  dram   14.060 J  checksum ok
+A-pool-b0.00-C100-L01 rep  0 (warm-up)  time    2.685 s  pkg    55.919 J  dram    1.497 J  checksum ok
+A-pool-b0.00-C100-L01 rep  1            time    2.663 s  pkg    55.743 J  dram    1.484 J  checksum ok
+C-vt-b0.50-C1000-L01 rep  0 (warm-up)  time    3.324 s  pkg    88.314 J  dram    2.322 J  checksum ok
+C-vt-b0.50-C1000-L01 rep  1            time    3.230 s  pkg    85.746 J  dram    2.275 J  checksum ok
+B-pool-b0.95-C1000-L01 rep  0 (warm-up)  time    3.160 s  pkg    80.384 J  dram    4.821 J  checksum ok
+B-pool-b0.95-C1000-L01 rep  1            time    3.135 s  pkg    78.981 J  dram    4.793 J  checksum ok
+C-vt-b0.25-C100-L01 rep  0 (warm-up)  time    3.500 s  pkg    90.999 J  dram    2.416 J  checksum ok
+C-vt-b0.25-C100-L01 rep  1            time    3.240 s  pkg    83.070 J  dram    2.148 J  checksum ok
+C-explicit-b0.25-C1000-L01 rep  0 (warm-up)  time    4.264 s  pkg    90.767 J  dram    2.581 J  checksum ok
+C-explicit-b0.25-C1000-L01 rep  1            time    4.126 s  pkg    87.048 J  dram    2.419 J  checksum ok
+A-fj-b0.75-C10000-L01 rep  0 (warm-up)  time   15.938 s  pkg    38.406 J  dram    9.120 J  checksum ok
+A-fj-b0.75-C10000-L01 rep  1            time   14.540 s  pkg    47.838 J  dram    8.268 J  checksum ok
+C-pool-b0.25-C1000-L01 rep  0 (warm-up)  time    4.157 s  pkg    90.580 J  dram    2.500 J  checksum ok
+C-pool-b0.25-C1000-L01 rep  1            time    4.032 s  pkg    86.827 J  dram    2.361 J  checksum ok
+C-vt-b0.75-C10-L01 rep  0 (warm-up)  time   20.694 s  pkg    68.036 J  dram   11.833 J  checksum ok
+C-vt-b0.75-C10-L01 rep  1            time   21.195 s  pkg    60.569 J  dram   12.004 J  checksum ok
+B-fj-b0.95-C10-L01 rep  0 (warm-up)  time   90.431 s  pkg    61.184 J  dram   54.192 J  checksum ok
+B-fj-b0.95-C10-L01 rep  1            time   90.476 s  pkg    58.427 J  dram   54.129 J  checksum ok
+B-vt-b0.25-C10-L01 rep  0 (warm-up)  time    6.177 s  pkg    78.480 J  dram    6.764 J  checksum ok
+B-vt-b0.25-C10-L01 rep  1            time    6.159 s  pkg    81.526 J  dram    6.692 J  checksum ok
+C-explicit-b0.00-C100-L01 rep  0 (warm-up)  time    3.053 s  pkg    58.610 J  dram    1.708 J  checksum ok
+C-explicit-b0.00-C100-L01 rep  1            time    3.033 s  pkg    58.800 J  dram    1.695 J  checksum ok
+A-vt-b0.25-C100-L01 rep  0 (warm-up)  time    2.880 s  pkg    66.738 J  dram    1.626 J  checksum ok
+A-vt-b0.25-C100-L01 rep  1            time    2.869 s  pkg    66.456 J  dram    1.607 J  checksum ok
+B-pool-b0.75-C100-L01 rep  0 (warm-up)  time    4.910 s  pkg    60.830 J  dram    6.039 J  checksum ok
+B-pool-b0.75-C100-L01 rep  1            time    4.011 s  pkg    68.343 J  dram    5.367 J  checksum ok
+A-fj-b0.50-C10000-L01 rep  0 (warm-up)  time    5.322 s  pkg    68.362 J  dram    2.975 J  checksum ok
+A-fj-b0.50-C10000-L01 rep  1            time    7.968 s  pkg    41.339 J  dram    4.445 J  checksum ok
+C-explicit-b0.75-C1000-L01 rep  0 (warm-up)  time    3.940 s  pkg    87.409 J  dram    2.553 J  checksum ok
+C-explicit-b0.75-C1000-L01 rep  1            time    3.857 s  pkg    83.171 J  dram    2.327 J  checksum ok
+A-vt-b0.75-C10-L01 rep  0 (warm-up)  time   20.270 s  pkg    42.868 J  dram   11.855 J  checksum ok
+A-vt-b0.75-C10-L01 rep  1            time   21.049 s  pkg    40.566 J  dram   12.221 J  checksum ok
+A-vt-b0.50-C100-L01 rep  0 (warm-up)  time    3.078 s  pkg    66.922 J  dram    1.738 J  checksum ok
+A-vt-b0.50-C100-L01 rep  1            time    3.021 s  pkg    66.894 J  dram    1.693 J  checksum ok
+B-explicit-b0.75-C1000-L01 rep  0 (warm-up)  time    3.006 s  pkg    79.548 J  dram    4.707 J  checksum ok
+B-explicit-b0.75-C1000-L01 rep  1            time    2.960 s  pkg    78.974 J  dram    4.666 J  checksum ok
+C-explicit-b0.75-C100-L01 rep  0 (warm-up)  time    6.888 s  pkg    76.140 J  dram    4.326 J  checksum ok
+C-explicit-b0.75-C100-L01 rep  1            time    7.289 s  pkg    68.688 J  dram    4.369 J  checksum ok
+A-pool-b0.50-C100-L01 rep  0 (warm-up)  time    3.447 s  pkg    61.856 J  dram    1.925 J  checksum ok
+A-pool-b0.50-C100-L01 rep  1            time    3.709 s  pkg    60.360 J  dram    2.068 J  checksum ok
+B-vt-b0.00-C100-L01 rep  0 (warm-up)  time    2.667 s  pkg    78.033 J  dram    4.456 J  checksum ok
+B-vt-b0.00-C100-L01 rep  1            time    2.638 s  pkg    77.517 J  dram    4.418 J  checksum ok
+A-vt-b0.95-C10000-L01 rep  0 (warm-up)  time    2.675 s  pkg    65.260 J  dram    1.527 J  checksum ok
+A-vt-b0.95-C10000-L01 rep  1            time    2.690 s  pkg    66.016 J  dram    1.511 J  checksum ok
+A-fj-b0.25-C10000-L01 rep  0 (warm-up)  time    3.655 s  pkg    63.043 J  dram    2.040 J  checksum ok
+A-fj-b0.25-C10000-L01 rep  1            time    3.677 s  pkg    63.408 J  dram    2.049 J  checksum ok
+A-explicit-b0.25-C10000-L01 rep  0 (warm-up)  time    3.140 s  pkg    57.707 J  dram    1.750 J  checksum ok
+A-explicit-b0.25-C10000-L01 rep  1            time    3.123 s  pkg    58.097 J  dram    1.739 J  checksum ok
+C-pool-b0.95-C10-L01 rep  0 (warm-up)  time   54.257 s  pkg    74.352 J  dram   32.591 J  checksum ok
+C-pool-b0.95-C10-L01 rep  1            time   54.457 s  pkg    70.330 J  dram   32.512 J  checksum ok
+C-vt-b0.00-C10-L01 rep  0 (warm-up)  time    4.145 s  pkg    64.631 J  dram    2.322 J  checksum ok
+C-vt-b0.00-C10-L01 rep  1            time    4.099 s  pkg    61.993 J  dram    2.285 J  checksum ok
+B-pool-b0.25-C1000-L01 rep  0 (warm-up)  time    3.080 s  pkg    79.663 J  dram    4.784 J  checksum ok
+B-pool-b0.25-C1000-L01 rep  1            time    3.079 s  pkg    79.910 J  dram    4.776 J  checksum ok
+B-fj-b0.50-C1000-L01 rep  0 (warm-up)  time    6.835 s  pkg    59.910 J  dram    7.270 J  checksum ok
+B-fj-b0.50-C1000-L01 rep  1            time    6.676 s  pkg    60.256 J  dram    7.164 J  checksum ok
+B-vt-b0.50-C100-L01 rep  0 (warm-up)  time    2.947 s  pkg    80.585 J  dram    4.637 J  checksum ok
+B-vt-b0.50-C100-L01 rep  1            time    2.878 s  pkg    78.585 J  dram    4.560 J  checksum ok
+B-explicit-b0.00-C1000-L01 rep  0 (warm-up)  time    2.562 s  pkg    76.672 J  dram    4.354 J  checksum ok
+B-explicit-b0.00-C1000-L01 rep  1            time    2.520 s  pkg    76.427 J  dram    4.324 J  checksum ok
+A-explicit-b0.50-C10000-L01 rep  0 (warm-up)  time    2.627 s  pkg    57.098 J  dram    1.465 J  checksum ok
+A-explicit-b0.50-C10000-L01 rep  1            time    2.590 s  pkg    56.715 J  dram    1.443 J  checksum ok
+B-pool-b0.75-C10-L01 rep  0 (warm-up)  time   19.945 s  pkg    51.841 J  dram   14.762 J  checksum ok
+B-pool-b0.75-C10-L01 rep  1            time   20.494 s  pkg    47.880 J  dram   15.018 J  checksum ok
+B-explicit-b0.95-C1000-L01 rep  0 (warm-up)  time    4.645 s  pkg    75.159 J  dram    5.929 J  checksum ok
+B-explicit-b0.95-C1000-L01 rep  1            time    5.267 s  pkg    70.263 J  dram    6.374 J  checksum ok
+C-fj-b0.95-C10-L01 rep  0 (warm-up)  time   94.470 s  pkg    87.895 J  dram   56.102 J  checksum ok
+C-fj-b0.95-C10-L01 rep  1            time   94.701 s  pkg    82.797 J  dram   55.918 J  checksum ok

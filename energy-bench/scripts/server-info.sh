@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Collects hardware and software details of the experiment machine.
 # Read-only: it changes nothing on the system.
-# Usage: bash server-info.sh            (prints and saves to server-info.txt)
+# Usage: bash scripts/server-info.sh [out.txt]   (prints and saves, default ./server-info.txt)
 
-out="server-info.txt"
+out="${1:-server-info.txt}"
 
 section() { echo; echo "== $1"; }
 

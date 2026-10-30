@@ -1,5 +1,6 @@
-# Maven build output
-target/
-
 # Original archive from Joost; its contents are committed unpacked in energy-bench/
 energy-bench.zip
+
+# Python
+__pycache__/
+.venv/

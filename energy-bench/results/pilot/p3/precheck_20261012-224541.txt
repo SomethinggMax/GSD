@@ -1,0 +1,20 @@
+precheck 2026-10-12T22:45:41+00:00 on rapl-server-joost  (fix=0)
+  OK    RAPL package domain /sys/class/powercap/intel-rapl:0 readable
+  OK    RAPL dram domain: /sys/class/powercap/intel-rapl:0/intel-rapl:0:2
+  OK    scaling driver intel_pstate
+  OK    turbo boost off (no_turbo=1)
+  OK    governor powersave on all CPUs
+  OK    8 CPUs online
+  OK    java: openjdk version "25.0.4.1" 2026-08-18
+  OK    apt-daily.timer not active
+  OK    apt-daily-upgrade.timer not active
+  OK    unattended-upgrades.service not active
+  OK    snap refreshes on hold
+  OK    suspend disabled (sleep.target masked)
+  OK    no other benchmark JVM running
+  OK    load average 0.38
+  INFO  logged in: 
+  OK    net.core.somaxconn=16384
+  OK    net.ipv4.tcp_max_syn_backlog=16384
+  OK    open files hard limit 65536
+precheck done: 0 FAIL, 0 WARN

@@ -1,7 +1,7 @@
 
 ===== time =====
-2026-10-12T22:10:20+00:00
- 22:10:20 up 13 days,  2:06,  2 users,  load average: 0.09, 0.21, 0.28
+2026-10-12T22:39:43+00:00
+ 22:39:43 up 13 days,  2:35,  1 user,  load average: 0.09, 0.04, 0.07
 
 ===== host =====
 rapl-server-joost
@@ -17,7 +17,7 @@ Model name:                              Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
 Thread(s) per core:                      1
 Core(s) per socket:                      8
 Socket(s):                               1
-CPU(s) scaling MHz:                      100%
+CPU(s) scaling MHz:                      80%
 CPU max MHz:                             3000.0000
 CPU min MHz:                             800.0000
 NUMA node(s):                            1
@@ -36,19 +36,19 @@ intel-rapl:0:1: uncore  max_energy_range_uj=262143328850
 intel-rapl:0:2: dram  max_energy_range_uj=262143328850
 
 ===== temperature =====
-Package id 0: 33 C
-Core 0: 30 C
-Core 1: 31 C
-Core 2: 30 C
-Core 3: 31 C
-Core 4: 33 C
-Core 5: 30 C
-Core 6: 30 C
-Core 7: 30 C
+Package id 0: 30 C
+Core 0: 26 C
+Core 1: 28 C
+Core 2: 26 C
+Core 3: 28 C
+Core 4: 30 C
+Core 5: 27 C
+Core 6: 28 C
+Core 7: 26 C
 
 ===== memory =====
                total        used        free      shared  buff/cache   available
-Mem:           15341        1704        8809           2        5169       13636
+Mem:           15341         784        9719           1        5179       14557
 Swap:           4095           0        4095
 
 ===== java =====
@@ -74,26 +74,26 @@ net.ipv4.tcp_max_syn_backlog = 16384
 kernel.perf_event_paranoid = 0
 
 ===== timers =====
-NEXT                             LEFT LAST                               PASSED UNIT                           ACTIVATES
-Mon 2026-10-12 22:20:00 UTC      9min Mon 2026-10-12 22:10:08 UTC       12s ago sysstat-collect.timer          sysstat-collect.service
-Tue 2026-10-13 00:00:00 UTC  1h 49min Mon 2026-10-12 00:00:23 UTC       22h ago dpkg-db-backup.timer           dpkg-db-backup.service
-Tue 2026-10-13 00:00:00 UTC  1h 49min Mon 2026-10-12 00:00:23 UTC       22h ago sysstat-rotate.timer           sysstat-rotate.service
-Tue 2026-10-13 00:07:00 UTC  1h 56min Mon 2026-10-12 00:07:08 UTC       22h ago sysstat-summary.timer          sysstat-summary.service
-Tue 2026-10-13 00:24:43 UTC  2h 14min Mon 2026-10-12 00:11:54 UTC       21h ago logrotate.timer                logrotate.service
-Tue 2026-10-13 20:11:37 UTC       22h Mon 2026-10-12 20:11:37 UTC  1h 58min ago update-notifier-download.timer update-notifier-download.service
-Tue 2026-10-13 20:23:23 UTC       22h Mon 2026-10-12 20:23:23 UTC  1h 46min ago systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
-Wed 2026-10-14 20:14:40 UTC 1 day 22h Sat 2026-10-10 00:09:07 UTC    2 days ago update-notifier-motd.timer     update-notifier-motd.service
-Sun 2026-10-18 03:10:19 UTC    5 days Sun 2026-10-11 03:10:43 UTC 1 day 18h ago e2scrub_all.timer              e2scrub_all.service
-Sun 2026-10-18 03:10:43 UTC    5 days Sun 2026-10-11 03:10:54 UTC 1 day 18h ago xfs_scrub_all.timer            xfs_scrub_all.service
-Mon 2026-10-19 01:16:49 UTC    6 days Mon 2026-10-12 00:33:43 UTC       21h ago fstrim.timer                   fstrim.service
--                                   - -                                       - apport-autoreport.timer        apport-autoreport.service
--                                   - Mon 2026-10-12 06:55:30 UTC       15h ago apt-daily-upgrade.timer        apt-daily-upgrade.service
--                                   - Mon 2026-10-12 11:40:36 UTC       10h ago apt-daily.timer                apt-daily.service
--                                   - Mon 2026-10-12 22:00:28 UTC      9min ago fwupd-refresh.timer            fwupd-refresh.service
--                                   - Mon 2026-10-12 05:22:08 UTC       16h ago man-db.timer                   man-db.service
--                                   - Mon 2026-10-12 20:52:54 UTC  1h 17min ago motd-news.timer                motd-news.service
--                                   - -                                       - snapd.snap-repair.timer        snapd.snap-repair.service
--                                   - -                                       - ua-timer.timer                 ua-timer.service
+NEXT                                 LEFT LAST                               PASSED UNIT                           ACTIVATES
+Mon 2026-10-12 22:40:00 UTC           16s Mon 2026-10-12 22:30:23 UTC      9min ago sysstat-collect.timer          sysstat-collect.service
+Tue 2026-10-13 00:00:00 UTC      1h 20min Mon 2026-10-12 00:00:23 UTC       22h ago dpkg-db-backup.timer           dpkg-db-backup.service
+Tue 2026-10-13 00:00:00 UTC      1h 20min Mon 2026-10-12 00:00:23 UTC       22h ago sysstat-rotate.timer           sysstat-rotate.service
+Tue 2026-10-13 00:07:00 UTC      1h 27min Mon 2026-10-12 00:07:08 UTC       22h ago sysstat-summary.timer          sysstat-summary.service
+Tue 2026-10-13 00:26:50 UTC      1h 47min Mon 2026-10-12 00:11:54 UTC       22h ago logrotate.timer                logrotate.service
+Tue 2026-10-13 20:11:37 UTC           21h Mon 2026-10-12 20:11:37 UTC  2h 28min ago update-notifier-download.timer update-notifier-download.service
+Tue 2026-10-13 20:23:23 UTC           21h Mon 2026-10-12 20:23:23 UTC  2h 16min ago systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+Sun 2026-10-18 03:10:28 UTC        5 days Sun 2026-10-11 03:10:54 UTC 1 day 19h ago xfs_scrub_all.timer            xfs_scrub_all.service
+Sun 2026-10-18 03:10:51 UTC        5 days Sun 2026-10-11 03:10:43 UTC 1 day 19h ago e2scrub_all.timer              e2scrub_all.service
+Mon 2026-10-19 00:27:35 UTC        6 days Mon 2026-10-12 00:33:43 UTC       22h ago fstrim.timer                   fstrim.service
+Fri 2026-10-23 22:49:25 UTC 1 week 4 days Mon 2026-10-12 22:28:42 UTC     11min ago update-notifier-motd.timer     update-notifier-motd.service
+-                                       - -                                       - apport-autoreport.timer        apport-autoreport.service
+-                                       - Mon 2026-10-12 06:55:30 UTC       15h ago apt-daily-upgrade.timer        apt-daily-upgrade.service
+-                                       - Mon 2026-10-12 11:40:36 UTC       10h ago apt-daily.timer                apt-daily.service
+-                                       - Mon 2026-10-12 22:00:28 UTC     39min ago fwupd-refresh.timer            fwupd-refresh.service
+-                                       - Mon 2026-10-12 05:22:08 UTC       17h ago man-db.timer                   man-db.service
+-                                       - Mon 2026-10-12 20:52:54 UTC  1h 46min ago motd-news.timer                motd-news.service
+-                                       - -                                       - snapd.snap-repair.timer        snapd.snap-repair.service
+-                                       - -                                       - ua-timer.timer                 ua-timer.service
 
 19 timers listed.
 
@@ -101,34 +101,22 @@ Mon 2026-10-19 01:16:49 UTC    6 days Mon 2026-10-12 00:33:43 UTC       21h ago 
 
 ===== top processes by cpu =====
     PID USER     %CPU %MEM COMMAND
- 278391 root      6.0  0.0 bash
- 269395 max       2.6  2.6 java
- 269578 max       2.4  1.9 claude
- 269090 max       0.9  1.5 MainThread
- 269055 max       0.9  0.9 MainThread
- 269196 max       0.1  0.4 MainThread
- 269022 max       0.1  0.1 code-df53daabb1
- 268124 root      0.0  0.0 kworker/4:0-events
+ 285481 root      5.5  0.0 bash
  268585 root      0.0  0.0 kworker/4:2-events
+ 268124 root      0.0  0.0 kworker/4:0-events
    1349 root      0.0  0.3 tailscaled
- 268984 max       0.0  0.0 sshd-session
- 275834 max       0.0  0.5 MainThread
- 268844 root      0.0  0.0 kworker/3:2-events
- 267698 root      0.0  0.0 kworker/6:0-cgroup_free
+ 285197 root      0.0  0.0 kworker/2:3-events
+ 267871 root      0.0  0.0 kworker/2:0-events
+ 267698 root      0.0  0.0 kworker/6:0-events
+ 281566 root      0.0  0.0 kworker/0:0-events
+ 267627 root      0.0  0.0 kworker/6:2-events
+ 268510 root      0.0  0.0 kworker/3:1-events
+ 285170 root      0.0  0.0 kworker/u32:1-events_power_efficient
+ 279103 root      0.0  0.0 kworker/0:2-events
+    862 root      0.0  0.0 irq/136-iwlwifi
+ 268073 root      0.0  0.0 kworker/5:1-events
 
 ===== network =====
 (interface addresses removed for publication)
 ===== harness =====
-8a98120bc21a4c0db798e6dad11e31e272b9726b
- M ../target/classes/energy/Main.class
- M ../target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
- M ../target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
-?? ../GSD.pdf
-?? ../energy-bench.zip
-?? ./
-?? ../server-info.sh
-?? ../server-info.txt
-?? ../src/main/java/energy/PowercapTest.java
-?? ../src/main/java/energy/RaplMeter.java
-?? ../target/classes/energy/PowercapTest.class
-?? ../target/classes/energy/RaplMeter.class
+not a git checkout

@@ -1,0 +1,4 @@
+jdk.VirtualThreadPinned      0 events
+jdk.ThreadPark               4004 events
+jdk.GarbageCollection        0 events
+jdk.ThreadStart              11 events

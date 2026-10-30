@@ -1,159 +1,169 @@
 # energy-bench
 
-Harness voor de GSD-studie (Liebeton & van Zanten): energie en prestaties van virtual threads,
-explicit threads, een fixed thread pool en ForkJoin, gemeten met Intel RAPL via powercap.
-Alles draait vanuit de shell: Java zonder build-tool, plus een paar bash-scripts.
+Measurement harness for the study *Energy and Performance of Virtual Threads Compared to Established
+JVM Concurrency Constructs* (Liebeton & van Zanten). It measures energy (Intel RAPL via Linux powercap)
+and execution time of virtual threads, explicit threads, a fixed thread pool and Fork/Join.
+Everything runs from the shell: plain Java without a build tool, plus a few bash scripts.
 
 ```
-build.sh                 compileert src/ naar build/ (JDK 21+, op de server JDK 25)
-config.env               alle parameters (iteraties, taken, launches, pauze, JVM-flags, seed)
-src/bench/Bench.java     één JVM-launch: één configuratie, REPS repetities, één CSV-regel per repetitie
-src/bench/Work.java      de taak: CPU-fase (A: rekenlus, B: string bouwen + hashen, C: rekenlus) + blokfase
-src/bench/Runner.java    de vier constructs: explicit, pool, fj, vt
-src/bench/Rapl.java      RAPL lezen via /sys/class/powercap, inclusief wrap-correctie
-src/bench/EchoServer.java  lokale server voor benchmark C (antwoordt na t_block)
-src/bench/Calib.java     pilot-hulp: RAPL-check, iteraties kalibreren, sleep/socket-nauwkeurigheid
-src/bench/Plan.java      maakt de geshufflede launch-lijst (vaste seed)
-scripts/run.sh           draait een launch-lijst; hervat zelf na crash of reboot
-scripts/pilot.sh         pilot-stappen p1 t/m p5
-scripts/experiment.sh    hoofdexperiment: alles in één keer, of per sessie
-scripts/precheck.sh      controle vóór een sessie (--fix zet turbo uit, stopt update-timers, ...)
-scripts/idle.sh          idle power meten
-scripts/status.sh        voortgang bekijken tijdens een run
-scripts/estimate.sh      machinetijd voor het hoofdexperiment, uit gemeten looptijden
-scripts/setup-once.sh    eenmalige instellingen (geen suspend, sysctl's, JDK vastzetten)
-scripts/restore.sh       na afloop: alle systeemwijzigingen terugdraaien (originele waarden staan in /var/lib/energy-bench)
+build.sh                   compiles src/ into build/ (JDK 21+, the study used JDK 25)
+config.env                 all parameters (iterations, tasks, launches, pause, JVM flags, seed)
+src/bench/Bench.java       one JVM launch: one configuration, REPS repetitions, one CSV line per repetition
+src/bench/Work.java        the task: CPU phase (A: arithmetic loop, B: build a string + hash, C: arithmetic loop) + blocking phase
+src/bench/Runner.java      the four constructs: explicit, pool, fj, vt
+src/bench/Rapl.java        reads RAPL from /sys/class/powercap, including wrap-around correction
+src/bench/EchoServer.java  local server for benchmark C (replies after t_block)
+src/bench/Calib.java       pilot helper: RAPL check, iteration calibration, sleep/socket accuracy
+src/bench/Plan.java        builds the shuffled launch list (fixed seed)
+scripts/run.sh             runs a launch list; resumes by itself after a crash or reboot
+scripts/pilot.sh           pilot steps p1 to p5
+scripts/experiment.sh      main experiment: all at once, or per session
+scripts/all.sh             the whole study unattended (pilots + main experiment) as a systemd service
+scripts/profile.sh         JFR profiling runs for Table 8 (separate from the energy measurements)
+scripts/precheck.sh        checks before a session (--fix turns turbo off, stops update timers, ...)
+scripts/idle.sh            measures idle power
+scripts/status.sh          shows progress during a run
+scripts/estimate.sh        machine-time estimate for the main experiment, from measured durations
+scripts/setup-once.sh      one-time settings (no suspend, sysctls, pin the JDK version)
+scripts/restore.sh         afterwards: undo all system changes (original values are in /var/lib/energy-bench)
+scripts/machine_state.sh   machine state for the record (stored with every run)
+scripts/server-info.sh     hardware/software summary of the machine (results/environment/server-info.txt)
 ```
 
-## 1. Op de server zetten (eenmalig)
+## 1. Install on the measurement machine (once)
 
-Via Max z'n repo (aanrader, dan staat de versie die je meet in git):
+The machine must be bare metal with an Intel CPU that exposes RAPL through powercap. The study used an
+Intel Core i7-9700 (8 cores, no hyper-threading), 16 GB RAM, Ubuntu 26.04.1 and OpenJDK 25.0.4.1.
 
 ```bash
 git clone <repo-url> && cd <repo>/energy-bench
-```
-
-Of rechtstreeks van je laptop via Tailscale:
-
-```bash
-scp -r energy-bench joost@rapl-server-joost:~/
-```
-
-Dan op de server:
-
-```bash
-cd ~/energy-bench
-sudo apt install -y openjdk-25-jdk-headless     # als die er nog niet op staat
-chmod +x build.sh scripts/*.sh
+sudo apt install -y openjdk-25-jdk-headless
 ./build.sh
 sudo ./scripts/setup-once.sh
 sudo ./scripts/precheck.sh --fix
 ```
 
-`precheck.sh` moet eindigen met `0 FAIL`. WARN-regels lees je even door; ze komen ook in de log van elke run.
+`precheck.sh` must end with `0 FAIL`. Read through the WARN lines; they are also stored in the log of every run.
 
 ## 2. Pilot
 
-Lange stappen start je losgekoppeld van je SSH-sessie, zodat een weggevallen verbinding de run niet stopt:
+Start long steps detached from your SSH session, so a dropped connection does not stop the run:
 
 ```bash
 sudo systemd-run --unit=pilot-p3 --working-directory="$PWD" ./scripts/pilot.sh p3
-journalctl -fu pilot-p3                 # meekijken (Ctrl-C stopt alleen het meekijken)
-./scripts/status.sh results/pilot/p3    # korte stand van zaken
+journalctl -fu pilot-p3                 # follow (Ctrl-C only stops following)
+./scripts/status.sh results/pilot/p3    # short status
 ```
 
-| Stap | Commando | Duur | Daarna |
+| Step | Command | Duration | Then |
 | --- | --- | --- | --- |
-| P1 instrument | `sudo ./scripts/pilot.sh p1` | ~10 min | Kijk in `results/pilot/p1/rapl.txt`: heet het DRAM-domein `dram`, loopt de teller op, hoe vaak wordt hij bijgewerkt, wanneer wrapt hij? |
-| P2 kalibratie | `sudo ./scripts/pilot.sh p2` | ~10 min | Zet `ITERS_A` en `ITERS_B` in `config.env` en haal het woord `PLACEHOLDER` weg. Kijk in `blocking.csv` naar `b_effective` per construct. |
-| P3 smoke test | `sudo ./scripts/pilot.sh p3` | ~2 u | `results/pilot/p3/estimate.txt`: machinetijd per keuze, runs < 2 s, checksum-fouten. `failures.csv` moet leeg zijn. |
-| P4 variantie | `sudo ./scripts/pilot.sh p4` | ~8–10 u | `results/pilot/p4/results.csv`: warm-up-curve (energie/tijd per `rep`), CV tussen launches, temperatuur per repetitie. |
-| P5 JFR | `sudo ./scripts/pilot.sh p5` | ~15 min | `.jfr`-bestanden plus tellingen van pinning, park en GC-events; looptijd met en zonder JFR in `results.csv`. |
+| P1 instrument | `sudo ./scripts/pilot.sh p1` | ~10 min | Check `results/pilot/p1/rapl.txt`: is the DRAM domain called `dram`, does the counter increase, how often is it updated, when does it wrap? |
+| P2 calibration | `sudo ./scripts/pilot.sh p2` | ~10 min | Put `ITERS_A` and `ITERS_B` in `config.env`. Check `b_effective` per construct in `blocking.csv`. |
+| P3 smoke test | `sudo ./scripts/pilot.sh p3` | ~2 h | `results/pilot/p3/estimate.txt`: machine time per option, runs < 2 s, checksum errors. `failures.csv` must be empty. |
+| P4 variance | `sudo ./scripts/pilot.sh p4` | ~8–10 h | `results/pilot/p4/results.csv`: warm-up curve (energy/time per `rep`), CV between launches, temperature per repetition. |
+| P5 JFR | `sudo ./scripts/pilot.sh p5` | ~15 min | `.jfr` files plus counts of pinning, park and GC events; run time with and without JFR in `results.csv`. |
 
-Commit `config.env` na P2 en na het beslismoment, zodat de gebruikte waarden in git staan.
+Commit `config.env` after P2, so the values used are in git.
 
-## 3. Hoofdexperiment
+## 3. Main experiment
 
-Twee manieren, met dezelfde configuraties en dezelfde seed:
+Two ways, with the same configurations and the same seed:
 
 ```bash
-# alles in één geshufflede lijst  -> results/main-all
+# everything in one shuffled list  -> results/main-all   (this is what the paper used)
 sudo systemd-run --unit=exp --working-directory="$PWD" ./scripts/experiment.sh all
 
-# of per sessie: sessie k = launch k van elke configuratie  -> results/main-s01 ... main-s10
+# or per session: session k = launch k of every configuration  -> results/main-s01 ... main-s10
 sudo systemd-run --unit=exp-s1 --working-directory="$PWD" ./scripts/experiment.sh session 1
 ```
 
-Parameters overschrijven zonder `config.env` aan te passen (bijvoorbeeld na het beslismoment):
+Override parameters without editing `config.env`:
 
 ```bash
 sudo systemd-run --unit=exp --working-directory="$PWD" \
   --setenv=LAUNCHES=7 --setenv=WARMUP=5 --setenv=AXES_ONLY=B,C ./scripts/experiment.sh all
 ```
 
-`AXES_ONLY=B,C` draait B en C alleen op C = 100 (alle b, RQ2) en b = 0 (alle C, RQ3); A blijft het volledige grid draaien.
+`AXES_ONLY=B,C` runs B and C only at C = 100 (all b, RQ2) and b = 0 (all C, RQ3); A still runs the full grid.
 
-**Gestopt?** (crash, stroom, reboot) Voer hetzelfde commando opnieuw uit. Launches in `done.txt` worden overgeslagen;
-de rijen van een half afgemaakte launch gaan naar `aborted_rows.csv` en die launch draait opnieuw.
-Is `config.env` intussen veranderd, dan weigert het script te hervatten (anders meet je half met andere instellingen).
-Na een reboot staat turbo weer aan: `sudo ./scripts/precheck.sh --fix` eerst.
+**Stopped?** (crash, power, reboot) Run the same command again. Launches in `done.txt` are skipped;
+the rows of a half-finished launch go to `aborted_rows.csv` and that launch runs again.
+If `config.env` changed in the meantime, the script refuses to resume (otherwise half the run would use other settings).
+After a reboot turbo is on again: run `sudo ./scripts/precheck.sh --fix` first.
 
-**Tijdens een run** niets zwaars op de server doen, ook niet `htop` laten openstaan. `status.sh` en `tail` zijn prima.
+**During a run** do nothing heavy on the machine, not even an open `htop`. `status.sh` and `tail` are fine.
 
-## 3b. Alles onbeheerd (pilots + hoofdexperiment)
+The full main experiment (2,400 launches) took about 3.5 days of machine time.
+
+## 3b. Everything unattended (pilots + main experiment)
+
+This is how the data in `results/` was produced.
 
 ```bash
-sudo ./scripts/all.sh install          # opties: --until p5 (stop vóór het hoofdexperiment), --at "2026-10-14 21:00 CEST"
-exit                                   # uitloggen en VS Code sluiten
-./scripts/all.sh status                # later: voortgang
+sudo ./scripts/all.sh install          # options: --until p5 (stop before the main experiment), --at "2026-10-14 21:00 CEST"
+exit                                   # log out and close VS Code
+./scripts/all.sh status                # later: progress
 ```
 
-Draait als systemd-service (`energy-bench`): geen SSH nodig, en na een reboot gaat hij verder (turbo weer uit,
-afgeronde stappen worden overgeslagen). Wacht eerst tot niemand is ingelogd en de VS Code-server weg is.
-Na p2 zet hij `ITERS_A`/`ITERS_B` zelf in `config.env` (stopt bij FAIL); na p3 stopt hij bij mislukte launches;
-na p4 wordt níét automatisch beslist: het hoofdexperiment gebruikt `LAUNCHES`/`REPS`/`WARMUP` uit `config.env`.
-Aan het eind (of bij een fout) draait `restore.sh` en schakelt de service zichzelf uit.
-Uitkomst in `results/all/FINISHED` of `results/all/FAILED`, log in `results/all/all.log`.
+Runs as a systemd service (`energy-bench`): no SSH needed, and after a reboot it continues (turbo off again,
+finished steps are skipped). It first waits until nobody is logged in and the VS Code server has exited.
+After p2 it writes `ITERS_A`/`ITERS_B` into `config.env` itself (stops on FAIL); after p3 it stops on failed launches;
+after p4 nothing is decided automatically: the main experiment uses `LAUNCHES`/`REPS`/`WARMUP` from `config.env`.
+At the end (or on an error) it runs `restore.sh` and disables itself.
+Outcome in `results/all/FINISHED` or `results/all/FAILED`, log in `results/all/all.log`.
+
+## 3c. Profiling (Table 8)
+
+```bash
+sudo ./scripts/profile.sh              # ~30 min -> results/profile/
+```
+
+One launch per construct for each of the five workloads in Table 8, with the JVM flags, `REPS` and `WARMUP`
+of the main experiment and a JFR recording (`settings=profile`). Writes the recordings, a `jfr summary` per
+recording, and `profile.csv` (thread starts, parks, pinned events, GCs, mean CPU load), which
+`analysis/reproduce.py` turns into Table 8. Profiling is never combined with the energy measurements.
 
 ## 4. Output
 
-Per run-map (`results/...`):
+Per run directory (`results/...`):
 
-| Bestand | Inhoud |
+| File | Contents |
 | --- | --- |
-| `results.csv` | één regel per repetitie (ook warm-up, met `is_warmup=1`) |
-| `launches.csv` | per launch: exit code, starttijd, wandkloktijd |
-| `failures.csv` | launches met checksum-fout (rc 3), time-out (rc 124/137) of crash |
-| `idle.csv` | idle power: begin, elke 6 uur tijdens lange runs, einde |
-| `precheck_*.txt`, `machine_state_*.txt` | machinestaat bij start en einde |
-| `plan.tsv`, `config.env`, `settings.log` | precies wat er gedraaid is, in welke volgorde, met welke instellingen |
+| `results.csv` | one line per repetition (warm-up included, with `is_warmup=1`) |
+| `launches.csv` | per launch: exit code, start time, wall-clock duration |
+| `failures.csv` | launches with a checksum error (rc 3), time-out (rc 124/137) or crash; absent if there were none |
+| `idle.csv` | idle power: start, every 6 hours during long runs, end |
+| `precheck_*.txt`, `machine_state_*.txt` | machine state at start and end |
+| `plan.tsv`, `config.env`, `settings.log` | exactly what ran, in which order, with which settings |
+| `bench.log`, `progress.log`, `echo_server.log`, `done.txt` | logs and the resume list |
 
-Kolommen van `results.csv`:
+Columns of `results.csv`:
 
 `timestamp, session, launch_id, launch_no, benchmark, construct, b, C, threads, tasks, iters, tcpu_ns, tblock_ns, rep, is_warmup,
 pkg_uj, dram_uj, time_ns, pkg_wrapped, dram_wrapped, checksum_ok, task_errors, gc_count, gc_ms, pkg_temp_c, rapl_pkg, rapl_dram, java_version`
 
-- `pkg_uj`/`dram_uj`: energie van de gemeten run in microjoule (`-1` als er geen DRAM-domein is).
-- `time_ns`: wandkloktijd van de gemeten run (`System.nanoTime`).
-- `threads`: platform-workers: N voor pool, min(C, N) voor explicit, 8 voor fj, 8 carriers voor vt.
-- `gc_count`, `gc_ms`, `pkg_temp_c`: gelezen buiten het meetvenster, voor uitleg achteraf.
+- `pkg_uj`/`dram_uj`: energy of the measured run in microjoules (`-1` if there is no DRAM domain).
+- `time_ns`: wall-clock time of the measured run (`System.nanoTime`).
+- `threads`: platform workers: N for pool, min(C, N) for explicit, 8 for fj, 8 carriers for vt.
+- `gc_count`, `gc_ms`, `pkg_temp_c`: read outside the measurement window, for explanation afterwards.
 
-De harness middelt niets: één waarde per launch (gemiddelde van de bewaarde repetities) maak je in de analyse.
+The harness averages nothing: one value per launch (the mean of the kept repetitions) is computed in the
+analysis (`../analysis/`).
 
-## 5. Keuzes in de code die in het report horen
+## 5. Design choices in the code
 
-- **Meetvenster:** RAPL lezen → `nanoTime` → alle batches → `nanoTime` → RAPL lezen. JVM-start, executor aanmaken, checksum vooraf berekenen en CSV schrijven vallen erbuiten.
-- **Zelfde werk:** taak *i* gebruikt seed *i* mod 64. De verwachte checksum van een run wordt vóór de metingen berekend; elke repetitie wordt daartegen gecontroleerd (`checksum_ok`).
-- **Batches:** een batch van C taken moet helemaal klaar zijn voor de volgende begint. Pool, fj en vt krijgen elke taak via `execute()` en wachten op een `CountDownLatch`; explicit start per batch min(C, N) threads die de taken om-en-om verdelen, en joint ze.
-- **Executors** worden één keer per launch gemaakt, vóór de warm-up, en hergebruikt over de repetities.
-- **ForkJoin:** eigen `ForkJoinPool(8)`, taken via `execute()`, geen `ManagedBlocker`.
-- **Benchmark C:** per taak een nieuwe TCP-verbinding met 127.0.0.1. De client sluit met een RST (`SO_LINGER 0`), zodat 200.000 verbindingen per launch geen TIME_WAIT-sockets achterlaten. De server gebruikt één virtual thread per verbinding en draait de hele sessie mee (ook tijdens idle-metingen), dus zijn energie zit in alle metingen.
-- **b = 0:** de blokfase wordt overgeslagen (ook in C).
-- **Effectieve b:** `Thread.sleep` slaapt altijd iets langer dan gevraagd, en niet per se even lang op een virtual thread als op een platform thread. In een testomgeving sliep een virtual thread bij 0,333 ms ruim 0,1 ms langer dan een platform thread. P2 meet dit op de server. Valt het verschil groot uit, rapporteer dan per construct de effectieve b.
-- **Benchmark B:** elke string wordt 4× met FNV-1a gehasht in plaats van één `String.hashCode()`. Met één hash alloceerde B ~2,4 GB/s per core en werd de CPU-fase op 8 threads 2,3× trager dan op 1 thread (contentie in cache/geheugen, geen GC-pauzes); nu ~360 MB/s per core en ~10% verschil. `Calib k` meldt FAIL als 8 threads meer dan 10% trager zijn dan 1.
-- **Pool-grootte:** N = round(8 / (1 − b)) = 8, 11, 16, 32, 160.
+- **Measurement window:** read RAPL → `nanoTime` → all batches → `nanoTime` → read RAPL. JVM start-up, creating the executor, precomputing the checksum and writing the CSV fall outside it.
+- **Same work:** task *i* uses seed *i* mod 64. The expected checksum of a run is computed before the measurements; every repetition is checked against it (`checksum_ok`).
+- **Batches:** a batch of C tasks must be completely finished before the next one starts. Pool, fj and vt receive every task through `execute()` and wait on a `CountDownLatch`; explicit starts min(C, N) threads per batch that divide the tasks round-robin, and joins them.
+- **Executors** are created once per launch, before the warm-up, and reused across repetitions.
+- **Fork/Join:** a dedicated `ForkJoinPool(8)`, tasks through `execute()`, no `ManagedBlocker`.
+- **Benchmark C:** a new TCP connection to 127.0.0.1 per task. The client closes with an RST (`SO_LINGER 0`), so 200,000 connections per launch leave no TIME_WAIT sockets. The server uses one virtual thread per connection and runs for the whole session (also during idle measurements), so its energy is included in all measurements.
+- **b = 0:** the blocking phase is skipped (also in C).
+- **Effective b:** `Thread.sleep` always sleeps somewhat longer than requested, and not necessarily by the same amount on a virtual thread as on a platform thread. P2 measures this on the machine (`results/pilot/p2/blocking.csv`); Section 7.6 of the paper uses it.
+- **Benchmark B:** every string is hashed 4× with FNV-1a instead of one `String.hashCode()`. With a single hash, B allocated ~2.4 GB/s per core and the CPU phase on 8 threads was 2.3× slower than on 1 thread (cache/memory contention, not GC pauses); now it is ~360 MB/s per core and ~10% difference. `Calib k` reports FAIL if 8 threads are more than 10% slower than 1.
+- **Pool size:** N = round(8 / (1 − b)) = 8, 11, 16, 32, 160.
 
-## AI-gebruik
+## AI use
 
-Deze harness is geschreven met hulp van Claude (Anthropic). De opdracht staat AI toe voor scripts die het
-experiment automatiseren, mits het in de bijlage staat: tool, doel, omvang en welke bestanden.
+This harness was written with help from Claude (Anthropic). The assignment allows AI for scripts that
+automate the experiment, provided it is listed in the appendix: tool, purpose, scope and which files.
