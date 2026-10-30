@@ -31,5 +31,5 @@ section "sysctl";      sysctl net.core.somaxconn net.ipv4.tcp_max_syn_backlog ke
 section "timers";      systemctl list-timers --all --no-pager 2>/dev/null | head -30
 section "logged in";   who
 section "top processes by cpu"; ps -eo pid,user,pcpu,pmem,comm --sort=-pcpu | head -15
-section "network";     ip -br addr 2>/dev/null
+section "network";     ip -br link 2>/dev/null   # names and state only, no addresses
 section "harness";     (cd "$ROOT" && git rev-parse HEAD 2>/dev/null && git status --short 2>/dev/null | head -20) || echo "not a git checkout"
